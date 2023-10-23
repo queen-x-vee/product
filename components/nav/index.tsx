@@ -49,7 +49,7 @@ function Navbar() {
   return (
     <nav className="m-5 md:p-5 p-4 w-[95%] mx-auto container bg-[#0E1416] border border-[#F2F4FC24] border-opacity-15 rounded-full">
       <section className="navbar flex z-50 text-white justify-between w-full items-center">
-        <Link href="/" className="cursor-pointer">
+        <Link href="/" className="cursor-pointer" onClick={handleNav}>
           <figure className="">
             <Image
               src={Logo}
@@ -116,7 +116,7 @@ function Navbar() {
           <div className="md:px-5 text-text">
             <div className="my-5">
               <p className="text-sm text-[#AAAAAA] mb-5">FOR BUSINESS</p>
-              <ul className="text-lg space-y-7">
+              <ul className="text-lg space-y-7" onClick={handleNav}>
                 <li>
                   <Link href="/business">Merchandising</Link>
                 </li>
@@ -135,7 +135,7 @@ function Navbar() {
 
             <div className="my-5">
               <p className="text-sm text-[#AAAAAA] mb-5">FOR TALENTS</p>
-              <ul className="text-lg space-y-7">
+              <ul className="text-lg space-y-7" onClick={handleNav}>
                 <li>
                   <Link href="/programstraining">Programs Training</Link>
                 </li>
@@ -153,7 +153,7 @@ function Navbar() {
 
             <div className="my-5 mb-20">
               <p className="text-sm text-[#AAAAAA] mb-5">ABOUT US</p>
-              <ul className="text-lg space-y-7">
+              <ul className="text-lg space-y-7" onClick={handleNav}>
                 <li>
                   <Link href="/aboutus">Who We Are</Link>
                 </li>

@@ -5,20 +5,20 @@ import {MdOutlinePersonPin} from "react-icons/md"
 
 const Business = () => {
   return (
-    <nav className="absolute top-28 lg:max-w-4xl xl:max-w-5xl 2xl:mx-auto 2xl:container 2xl:left-96 right-14 2xl:max-w-5xl cursor-pointer rounded-xl flex justify-between border border-[#F2F4FC24] border-opacity-10 text-text bg-[#0E1416]">
+    <nav className="absolute top-24 lg:max-w-4xl xl:max-w-5xl 2xl:mx-auto 2xl:container 2xl:left-96 right-14 2xl:max-w-5xl cursor-pointer rounded-xl flex justify-between border border-[#F2F4FC24] border-opacity-10 text-text bg-[#0E1416]">
       <div className="hover:bg-[#182222] overflow-hidden justify-center flex flex-col max-h-full w-full px-5">
         <div className="py-8">
           <h3 className="text-xl mb-2 flex items-center">
             <span className="pr-2">
               {<BsFillBoxSeamFill className="text-sm text-section" />}
-            </span>{" "}
+            </span>
             Merchandising
           </h3>
           <p className="text-sm max-w-sm text-dark">
             As tech event organizers, we also create branded merchandise for
             tech organizations and communities for events and merch stores.
           </p>
-          <div className="mt-4">
+          <div className="mt-5">
             <a href="/services/#merch" className="underline-hover">
               <p className="flex items-center">
                 Place an order
@@ -41,7 +41,7 @@ const Business = () => {
             Ease your recruitment process with our human resource team designed
             to vet and provide the best fit from our tech talents.
           </p>
-          <div className="mt-4">
+          <div className="mt-5">
             <a href="/services/#recruitment" className="underline-hover">
               <p className="flex items-center">
                 Recruit a team
@@ -63,7 +63,7 @@ const Business = () => {
             We train, assess and maintain the quality of our talent pool
             regularly to ensure satisfaction both for busniesses and talents.
           </p>
-          <div className="mt-4">
+          <div className="mt-5">
             <a href="/services/#event" className="underline-hover">
               <p className="flex items-center">
                 Get event support{" "}
@@ -93,7 +93,7 @@ const Business = () => {
         }
 
         .underline-hover:hover:after {
-          width: 35%;
+          width: 30%;
         }
       `}</style>
     </nav>
