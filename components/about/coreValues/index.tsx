@@ -3,7 +3,7 @@ import React from "react";
 
 const CoreValues = () => {
   return (
-    <div className="py-14 lg:py-32 ">
+    <div className="pt-14 lg:pt-32 ">
       <div>
         <p className="text-section font-medium text-base">Beliefs</p>
         <h1 className="md:text-5xl text-4xl font-semibold text-white mb-7">
@@ -41,6 +41,7 @@ const CoreValues = () => {
           <AboutCard title="Integrity" text="Conducting business with honesty, transparency, and ethical standards, building trust with clients, partners, and the tech community." icon="hi" />
         </div>
       </div>
+      <hr className="lg:mt-20 mt-14 opacity-10" />
     </div>
   );
 };

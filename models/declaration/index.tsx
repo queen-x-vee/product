@@ -22,3 +22,8 @@ export interface aboutCardProps {
   text: string;
   title: string;
 }
+
+export interface aboutFaqProps {
+  question: string;
+  answer: string;
+}
