@@ -27,7 +27,7 @@ const Testimonial = () => {
           className="text-white font-light md:text-xl md:max-w-2xl max-w-[300px] sm:max-w-[355px] text-base"
         >
           <div>
-          <p className="lg:text-xl leading-9">
+          <p className="lg:text-2xl leading-9">
               Working with Innovotio was a seamless one and I love how they hold
               your hand all through the process. The service was topnotch and
               even after the end of our contract, they were still supportive.
@@ -40,7 +40,7 @@ const Testimonial = () => {
             </div>
           </div>
           <div>
-          <p className="lg:text-xl leading-9">
+          <p className="lg:text-2xl leading-9">
               I currently intern as a content creator at PennyTree via
               Innovotio. As a content writer at PennyTree, the experience has
               been valuable in honing my skills and gaining practical knowledge
@@ -55,7 +55,7 @@ const Testimonial = () => {
             </div>
           </div>
           <div>
-            <p className="lg:text-xl leading-9">
+            <p className="lg:text-2xl leading-9">
               Innovotio matched me with Startup Launchcode. I am already
               enjoying my role here as one of the graphic designers. The tasks
               keep pushing me to think outside the box and deep down, I know
