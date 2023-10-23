@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React from "react";
-import { MdGroups } from "react-icons/md";
+import { MdGroups, MdOutlinePersonPin } from "react-icons/md";
 import { HiUserGroup } from "react-icons/hi";
 import { TbUserSearch } from "react-icons/tb";
-import { BsPersonWorkspace, BsFillGiftFill } from "react-icons/bs";
+import { BsFillGiftFill } from "react-icons/bs";
 import { FaPeopleCarry } from "react-icons/fa";
 import Button from "@/components/micro/button";
 import ServiceCard from "@/components/micro/services/card";
@@ -46,7 +46,7 @@ const Services = () => {
           <Paired
             title="Recruitment"
             className="w-72 h-72"
-            icon={<BsPersonWorkspace />}
+            icon={<MdOutlinePersonPin />}
             illustration="../../.././assets/services/recruit.svg"
             text="Cease your recruitment process with our human resource team designed to vet and provide the best fit from our tech talents."
           />
