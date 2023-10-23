@@ -17,3 +17,8 @@ export interface serviceCardProps {
   illustration: string;
   illustration2?: string;
 }
+export interface aboutCardProps {
+  icon: string | React.ReactNode;
+  text: string;
+  title: string;
+}
