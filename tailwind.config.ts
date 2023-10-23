@@ -17,7 +17,7 @@ const config: Config = {
         section: "#FFCC00",
         dark: "#A3A3A3",
         hover: "#182222",
-
+        primary: "#0E1416",
       },
     },
   },

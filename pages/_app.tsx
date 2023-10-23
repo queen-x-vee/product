@@ -5,7 +5,7 @@ import type { AppProps } from "next/app";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className="font-inter overflow-x-hidden bg-[#0E1416]">
+    <div className="font-inter overflow-x-hidden bg-primary">
       <Navbar />
       <Component {...pageProps} />
       <Footer/>

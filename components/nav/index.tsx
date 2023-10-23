@@ -7,7 +7,7 @@ import cancel from "../../public/assets/navbar/cancel.svg";
 import arrow from "../../public/assets/navbar/arrow.svg";
 import menu from "../../public/assets/navbar/menu.svg";
 import About from "./about";
-import Tal from "./Tal";
+import Talent from "./Talent";
 import Business from "./business";
 
 function Navbar() {
@@ -47,7 +47,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="m-5 lg:p-5 p-4 2xl:mx-auto 2xl:container bg-[#0E1416] border border-[#F2F4FC24] border-opacity-15 rounded-full">
+    <nav className="m-5 md:p-5 p-4 w-[95%] mx-auto container bg-[#0E1416] border border-[#F2F4FC24] border-opacity-15 rounded-full">
       <section className="navbar flex z-50 text-white justify-between w-full items-center">
         <Link href="/" className="cursor-pointer">
           <figure className="">
@@ -91,7 +91,7 @@ function Navbar() {
             <span className="ml-1">
               <Image src={arrow} width={16} height={16} alt="arrow" />
             </span>
-            {navigation.talent && <Tal />}
+            {navigation.talent && <Talent />}
           </li>
           <li
             className={`flex items-center cursor-pointer ${
@@ -111,9 +111,9 @@ function Navbar() {
         <div
           className={` ${
             nav ? "block" : "hidden"
-          } justify-between text-base lg:hidden absolute top-24 bg-[#0E1416] left-0 min-w-full z-50 cursor-pointer `}
+          } justify-between text-base lg:hidden absolute top-28 bg-[#0E1416] left-0 pl-5 lg:pl-10 min-w-full z-50 cursor-pointer `}
         >
-          <div className="px-5 md:px-10 text-text">
+          <div className="md:px-5 text-text">
             <div className="my-5">
               <p className="text-sm text-[#AAAAAA] mb-5">FOR BUSINESS</p>
               <ul className="text-lg space-y-7">
