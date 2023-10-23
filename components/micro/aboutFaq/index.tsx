@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { aboutFaqProps } from "@/models/declaration";
+import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
 
 const FaqDropdown = ({ question, answer }: aboutFaqProps) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +16,7 @@ const FaqDropdown = ({ question, answer }: aboutFaqProps) => {
         onClick={toggleDropdown}
       >
         <p>{question}</p>
-        <span className={isOpen ? "transform rotate-180" : ""}>▼</span>
+        <span className={isOpen ? "transform rotate-180" : ""}><MdOutlineKeyboardArrowDown size={24} /></span>
       </button>
       {isOpen && (
         <div className="p-3 bg-gray-100">

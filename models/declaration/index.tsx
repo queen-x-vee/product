@@ -47,9 +47,10 @@ export interface serviceCardProps {
   illustration2?: string;
 }
 export interface aboutCardProps {
-  icon: string | React.ReactNode;
+  icon: string;
   text: string;
   title: string;
+  //src: string;
 }
 
 export interface aboutFaqProps {
