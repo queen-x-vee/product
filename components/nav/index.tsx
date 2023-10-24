@@ -49,7 +49,7 @@ function Navbar() {
   return (
     <nav className="m-5 md:p-5 p-4 w-[95%] mx-auto container bg-[#0E1416] border border-[#F2F4FC24] border-opacity-15 rounded-full">
       <section className="navbar flex z-50 text-white justify-between w-full items-center">
-        <a href="/" className="cursor-pointer">
+        <Link href="/" className="cursor-pointer">
           <figure className="">
             <Image
               src={Logo}
@@ -66,7 +66,7 @@ function Navbar() {
               className="block lg:hidden"
             />
           </figure>
-        </a>
+        </Link>
 
         <ul className="navbar space-x-10 text-base lg:flex hidden">
           <li

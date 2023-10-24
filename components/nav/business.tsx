@@ -1,7 +1,8 @@
+import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 import { HiUserGroup } from "react-icons/hi";
 import { BsFillBoxSeamFill } from "react-icons/bs";
-import {MdOutlinePersonPin} from "react-icons/md"
+import { MdOutlinePersonPin } from "react-icons/md";
 
 const Business = () => {
   return (
@@ -19,12 +20,12 @@ const Business = () => {
             tech organizations and communities for events and merch stores.
           </p>
           <div className="mt-5">
-            <a href="/services/#merch" className="underline-hover">
+            <Link href="/services/#merch" className="underline-hover">
               <p className="flex items-center">
                 Place an order
                 <span className="ml-1 text-lg">{<FiArrowUpRight />}</span>
               </p>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -42,12 +43,12 @@ const Business = () => {
             to vet and provide the best fit from our tech talents.
           </p>
           <div className="mt-5">
-            <a href="/services/#recruitment" className="underline-hover">
+            <Link href="/services/#recruitment" className="underline-hover">
               <p className="flex items-center">
                 Recruit a team
                 <span className="ml-1 text-lg">{<FiArrowUpRight />}</span>
               </p>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -64,12 +65,12 @@ const Business = () => {
             regularly to ensure satisfaction both for busniesses and talents.
           </p>
           <div className="mt-5">
-            <a href="/services/#event" className="underline-hover">
+            <Link href="/services/#event" className="underline-hover">
               <p className="flex items-center">
                 Get event support{" "}
                 <span className="ml-1 text-lg">{<FiArrowUpRight />}</span>
               </p>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
