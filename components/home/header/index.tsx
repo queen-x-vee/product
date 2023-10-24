@@ -8,7 +8,7 @@ const Header = () => {
         <h1 className="lg:text-6xl text-4xl font-semibold max-w-md sm:max-w-[480px] lg:max-w-4xl text-text">
           Get qualified tech talents & event support
         </h1>
-        <p className="lg:text-lg text-base sm:max-w-3xl text-[#D9D9D9E5]">
+        <p className="lg:text-lg text-base sm:max-w-3xl text-texts">
           We provide qualified tech talents to hiring organizations, organize
           tech events and curate branded merchandise.
         </p>

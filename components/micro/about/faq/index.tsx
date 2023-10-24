@@ -1,0 +1,33 @@
+import React, { useState } from "react";
+import { aboutFaqProps } from "@/models/declaration";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+
+const FaqDropdown = ({ question, answer }: aboutFaqProps) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className={`mb-5 cursor-pointer ${isOpen && "transition-all ease-in-out delay-200"}`}>
+      <div
+        className=" p-6 rounded-2xl text-text bg-hover"
+        onClick={toggleDropdown}
+      >
+        <div className="flex justify-between w-full">
+          <p>{question}</p>
+          <span className={isOpen ? "transform rotate-180" : ""}>
+            <MdOutlineKeyboardArrowDown size={24} />
+          </span>
+        </div>
+        {isOpen && (
+          <div className="py-2">
+            <p>{answer}</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default FaqDropdown;

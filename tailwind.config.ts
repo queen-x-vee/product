@@ -14,6 +14,7 @@ const config: Config = {
       },
       colors: {
         text: "#FCFCFC",
+        texts: "#D9D9D9E5",
         section: "#FFCC00",
         dark: "#A3A3A3",
         hover: "#182222",
