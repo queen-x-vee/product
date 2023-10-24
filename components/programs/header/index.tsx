@@ -22,7 +22,7 @@ const Header = () => {
             Programs Training
           </p>
 
-          <h1 className="lg:text-5xl text-3xl font-medium max-w-md sm:max-w-2xl">
+          <h1 className="lg:text-5xl text-3xl font-semibold max-w-md sm:max-w-2xl">
             Skill up with our talent building and management.
           </h1>
           <p className="py-3 leading-7 lg:text-base text-sm text-texts max-w-xl">
