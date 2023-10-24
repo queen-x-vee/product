@@ -9,10 +9,10 @@ const TrainingCard = ({timeFrame, image, quater}: trainingProps) => {
     </div>
     <div>
       <div className="lg:pl-6 pl-0 xl:pl-0">
-        <h1 className="md:text-3xl text-2xl font-medium">
+        <h1 className="lg:text-3xl text-xl font-medium">
           {timeFrame}-{quater} introductory training program
         </h1>
-        <p className="max-w-xl lg:max-w-xl md:max-w-full font-light text-lg text-headerGrey py-5">
+        <p className="max-w-xl lg:max-w-xl md:max-w-full font-light lg:text-lg text-texts py-5">
           Get started with a tech skill using our introductory
           training program. Get introduced to all the basics necessary to
           start a career in tech

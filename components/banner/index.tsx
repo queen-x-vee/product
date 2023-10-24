@@ -6,10 +6,10 @@ const Banner = () => {
     <section className="pt-14 lg:pt-20">
       <div className="flex-col lg:flex-row lg:items-center lg:justify-around text-white flex">
         <div className="space-y-5">
-          <h1 className="text-3xl font-medium max-w-md lg:max-w-xl lg:text-5xl">
+          <h1 className="xl:text-4xl md:text-3xl text-2xl font-medium max-w-sm lg:max-w-md ">
             Get top quality services at Innovotio
           </h1>
-          <p className="text-base text-[#A3A3A3] max-w-md md:max-w-xl lg:max-w-md w-full">
+          <p className="text-base text-texts max-w-md md:max-w-xl lg:max-w-md w-full">
             Our team of professionals will manage your events and provide you
             with top-quality merch and event support.
           </p>
@@ -17,7 +17,7 @@ const Banner = () => {
         <div className="flex flex-row space-x-10 lg:pt-0 pt-6">
           <Link href="/business" legacyBehavior>
             <a target="_blank">
-              <Button>Order Merchandise</Button>
+              <Button>Order Merch</Button>
             </a>
           </Link>
           <Link href="/business" legacyBehavior>

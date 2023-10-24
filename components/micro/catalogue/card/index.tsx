@@ -19,7 +19,7 @@ const CatalogueCard = ({
         <div className="text-section">{icon}</div>
         <h2 className="lg:text-lg font-medium ml-2 text-lg">{heading}</h2>
       </div>
-      <p className="leading-8 text-start font-medium text-base max-w-full lg:max-w-md md:max-w-lg md:text-sm py-5 text-Darkgray">
+      <p className="leading-8 text-start  text-base max-w-full lg:max-w-md md:max-w-lg md:text-sm py-5 text-texts">
         {service}
       </p>
       <div className="font-medium py-3" onClick={() => setModal(true)}>

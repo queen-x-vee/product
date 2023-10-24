@@ -26,7 +26,7 @@ function Footer() {
             <Link href="/business" legacyBehavior>
               <a target="_blank">
                 <button className="hover:bg-btnHoverYellow h-11 font-medium rounded-xl text-lg mt-7  w-40 border-black border  bg-white text-black">
-                  Hire a talent
+                  Get In Touch
                 </button>
               </a>
             </Link>

@@ -1,11 +1,11 @@
 const Header = () => {
   return (
     <header className="lg:pt-12 pt-6">
-      <h1 className="lg:text-5xl text-4xl font-medium text-white mb-7">
+      <h1 className="xl:text-5xl md:text-4xl text-3xl font-medium text-white">
         Who We Are
       </h1>
-      <div className="text-dark lg:text-xl text-base text-justify  max-w-xl md:max-w-3xl font-light">
-        <p>
+      <div className="text-texts lg:text-xl text-base text-justify max-w-xl md:max-w-3xl font-light">
+        <p className="pt-2">
           Innovotio is a tech organization that specializes in connecting tech
           talent across all levels of experience to organizations of all sizes
           to achieve their business goals.

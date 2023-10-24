@@ -5,7 +5,7 @@ const Stats = () => {
         <div className="xl:max-w-[40%]">
           <div>
             <p className="text-section font-medium text-sm lg:text-base">Stats</p>
-            <h1 className="lg:text-5xl max-w-lg text-4xl font-medium text-white mb-7">
+            <h1 className="xl:text-4xl md:text-3xl text-2xl xl:max-w-lg max-w-sm font-medium text-white mb-7">
               We ensure that all our services offer value.
             </h1>
           </div>
@@ -14,39 +14,39 @@ const Stats = () => {
         <div className="space-y-16">
               <div className="space-y-3 max-w-xs">
                 <h2 className="lg:text-4xl text-2xl text-text">50+</h2>
-                <p className="text-xl text-texts">
+                <p className="text-lg text-texts">
                   All individual merchandise successfully delivered
                 </p>
               </div>
               <div className="space-y-3 max-w-xs">
                 <h2 className="lg:text-4xl text-2xl text-text">6%</h2>
-                <p className="text-lg  text-texts">
+                <p className="text-lg text-texts">
                   Average revenue growth within few months of operation
                 </p>
               </div>
               <div className="space-y-3 max-w-xs">
                 <h2 className="lg:text-4xl text-2xl text-text">10</h2>
-                <p className="text-lg  text-texts">
+                <p className="text-lg text-texts">
                   Number companies registered through us
                 </p>
               </div>
             </div>
             <div className="space-y-16">
-            <div className="space-y-3 max-w-xs">
-                <h2 className="lg:text-4xl text-2xl  text-text">100</h2>
-                <p className="text-xl text-texts">
+            <div className="space-y-3 max-w-[250px]">
+                <h2 className="lg:text-4xl text-2xl text-text">100</h2>
+                <p className="text-lg text-texts">
                   Total number of soft skills Alumnis
                 </p>
               </div>
               <div className="space-y-3 max-w-xs">
                 <h2 className="lg:text-4xl text-2xl font-normal text-text">8</h2>
-                <p className="text-xl font-normal text-texts">
+                <p className="text-lg font-normal text-texts">
                   Tech events managed since we began
                 </p>
               </div>
               <div className="space-y-3 max-w-xs">
                 <h2 className="lg:text-4xl text-2xl  font-normal text-text">20+</h2>
-                <p className="text-xl font-normal text-texts">
+                <p className="text-lg font-normal text-texts">
                   Number of brands that have trusted us to deliver quality
                 </p>
               </div>

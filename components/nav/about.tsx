@@ -3,11 +3,11 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { BsFillInfoSquareFill } from "react-icons/bs";
 import { RiArticleFill } from "react-icons/ri";
 import { PiSuitcaseSimpleBold } from "react-icons/pi";
-import {GiPadlock} from "react-icons/gi"
+import { GiPadlock } from "react-icons/gi";
 
 const About = () => {
   return (
-    <nav className="absolute top-24 lg:max-w-4xl xl:max-w-5xl 2xl:mx-auto 2xl:container 2xl:left-96 right-14 2xl:max-w-5xl cursor-pointer rounded-xl flex justify-between border border-[#F2F4FC24] border-opacity-10 text-text bg-[#0E1416]">
+    <nav className="absolute top-24 lg:max-w-4xl xl:max-w-6xl 2xl:max-w-6xl 2xl:mx-auto 2xl:container 2xl:left-96 right-14  cursor-pointer rounded-xl flex justify-between border border-[#F2F4FC24] border-opacity-10 text-text bg-[#0E1416]">
       <div className="w-3/6 max-h-full hover:bg-hover overflow-hidden px-8">
         <div className="py-8">
           <h3 className="text-xl mb-3 flex items-center">
@@ -17,8 +17,8 @@ const About = () => {
             Who We Are
           </h3>
           <p className="text-sm lg:text-xs xl:text-sm text-dark">
-            We go beyond connecting tech talents, by offering addittional
-            services to businesses.
+            We go beyond connecting tech talents to businesses and offer
+            additional services for businesses and our talent pool.
           </p>
           <Link href="/aboutus" className=" ">
             <p className="flex items-center mt-5 underline-hover">
@@ -41,7 +41,7 @@ const About = () => {
             the industry with innovotio
           </p>
           <p className="flex items-center mt-5 underline-hover">
-            Coming soon
+            Coming Soon
             <span className="ml-1 text-lg">{<GiPadlock />}</span>
           </p>
         </div>
@@ -59,7 +59,7 @@ const About = () => {
             business tips too on our blog.
           </p>
           <p className="flex items-center mt-5 underline-hover">
-            Coming soon
+            Coming Soon
             <span className="ml-1 text-lg">{<GiPadlock />}</span>
           </p>
         </div>

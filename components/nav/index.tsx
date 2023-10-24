@@ -49,7 +49,7 @@ function Navbar() {
   return (
     <nav className="m-5 md:p-5 p-4 w-[95%] mx-auto container bg-[#0E1416] border border-[#F2F4FC24] border-opacity-15 rounded-full">
       <section className="navbar flex z-50 text-white justify-between w-full items-center">
-        <Link href="/" className="cursor-pointer" onClick={handleNav}>
+        <a href="/" className="cursor-pointer">
           <figure className="">
             <Image
               src={Logo}
@@ -66,7 +66,7 @@ function Navbar() {
               className="block lg:hidden"
             />
           </figure>
-        </Link>
+        </a>
 
         <ul className="navbar space-x-10 text-base lg:flex hidden">
           <li
@@ -118,16 +118,16 @@ function Navbar() {
               <p className="text-sm text-[#AAAAAA] mb-5">FOR BUSINESS</p>
               <ul className="text-lg space-y-7" onClick={handleNav}>
                 <li>
-                  <Link href="/business">Merchandising</Link>
+                  <Link href="/services/#merch">Merchandising</Link>
                 </li>
                 <li>
                   <Link href="/services#recuitment">Recruitment</Link>
                 </li>
                 <li>
-                  <Link href="/business">Tech Event Organization</Link>
+                  <Link href="/services/#event">Tech Event Organization</Link>
                 </li>
                 <li>
-                  <Link href="/business">Consultancy</Link>
+                  <Link href="/services/#consultancy">Consultancy</Link>
                 </li>
               </ul>
             </div>

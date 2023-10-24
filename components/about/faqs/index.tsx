@@ -1,21 +1,27 @@
-
 import FaqDropdown from "@/components/micro/about/faq";
 import React from "react";
 const Data = [
-    {
-      question: "What is Innovotio about?",
-      answer: "nil",
-    },
-    {
-      question: "What is Innovotio about?",
-      answer: "nil",
-    },
-    {
-      question:"What is Innovotio about?",
-      answer: "nil",
-    },
-  ];
-
+  {
+    question: "What is Innovotio about?",
+    answer: "nil",
+  },
+  {
+    question: "What is Innovotio about?",
+    answer: "nil",
+  },
+  {
+    question: "What is Innovotio about?",
+    answer: "nil",
+  },
+  {
+    question: "What is Innovotio about?",
+    answer: "nil",
+  },
+  {
+    question: "What is Innovotio about?",
+    answer: "nil",
+  },
+];
 
 const Faqs = () => {
   return (
@@ -23,18 +29,24 @@ const Faqs = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 ">
         <div className="lg:col-span-1">
           <div>
-            <p className="text-section font-medium text-sm lg:text-base">FAQs</p>
-            <h1 className="lg:text-5xl text-3xl max-w-md sm:max-w-full font-medium text-white">
-            We may have answered one of your many questions.
+            <p className="text-section font-medium text-sm lg:text-base">
+              FAQs
+            </p>
+            <h1 className="xl:text-4xl md:text-3xl text-2xl max-w-md font-medium text-white">
+              We may have answered one of your many questions.
             </h1>
           </div>
         </div>
-       
+
         <div className="lg:col-span-1">
           <div className="space-y-5 pt-6">
-          {Data.map((faq, index) => (
-        <FaqDropdown key={index} question={faq.question} answer={faq.answer} />
-      ))}
+            {Data.map((faq, index) => (
+              <FaqDropdown
+                key={index}
+                question={faq.question}
+                answer={faq.answer}
+              />
+            ))}
           </div>
         </div>
       </div>

@@ -50,10 +50,16 @@ export interface aboutCardProps {
   icon: string;
   text: string;
   title: string;
-  //src: string;
 }
 
 export interface aboutFaqProps {
   question: string;
   answer: string;
+}
+
+export interface serviceLayout {
+  image: string;
+  heading: string;
+  service: string;
+  link: string;
 }

@@ -1,3 +1,4 @@
+import Banner from "../banner";
 import Careers from "./careers";
 import CoreValues from "./coreValues";
 import Faqs from "./faqs";
@@ -11,6 +12,8 @@ const About = () => {
       <Stats/>
       <Faqs/>
       <Careers/>
+      <Banner />
+
     </div>
   );
 };

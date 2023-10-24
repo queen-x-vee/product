@@ -5,14 +5,14 @@ const Header = () => {
   return (
     <header className="lg:pt-12 pt-6">
       <div className="space-y-5">
-        <h1 className="lg:text-6xl text-4xl font-semibold max-w-md sm:max-w-[480px] lg:max-w-4xl text-text">
+        <h1 className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl font-semibold max-w-md sm:max-w-[480px] lg:max-w-3xl xl:max-w-4xl text-text">
           Get qualified tech talents & event support
         </h1>
         <p className="lg:text-lg text-base sm:max-w-3xl text-texts">
           We provide qualified tech talents to hiring organizations, organize
           tech events and curate branded merchandise.
         </p>
-        <div className="flex sm:flex-row flex-col gap-x-3 gap-y-6 md:gap-y-0 pt-3 sm:max-w-md items-center justify-center sm:justify-between">
+        <div className="flex sm:flex-row flex-col gap-x-3 space-y-4 md:gap-y-0 pt-3 sm:max-w-md items-center justify-center sm:justify-between">
           <Button className="w-full sm:w-fit bg-white text-black">
             Hire Tech Talent
           </Button>

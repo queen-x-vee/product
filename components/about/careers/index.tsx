@@ -11,13 +11,13 @@ const Careers = () => {
           <p className="text-section font-medium text-sm lg:text-base">
             Careers
           </p>
-          <h2 className="lg:text-5xl text-3xl font-medium max-w-lg lg:max-w-full text-white">
+          <h2 className="xl:text-4xl md:text-3xl text-2xl font-medium max-w-lg text-white">
             This is the ideal moment to join us in shaping Innovotio.
           </h2>
         </div>
         <div className="lg:pt-0 pt-5">
           <Button className="flex items-center  underline-hover">
-            Coming soon
+            Coming Soon
             <span className="ml-2 text-lg">{<GiPadlock />}</span>
           </Button>
         </div>

@@ -17,11 +17,13 @@ const Description = () => {
     <section className="pt-14 lg:pt-20">
       <div className="flex flex-col lg:flex-row">
         <div className="space-y-5 md:w-full xl:w-5/12 lg:w-5/12">
-          <p className="text-section font-medium">Our Framework</p>
-          <h2 className="font-medium lg:text-5xl text-3xl lg:w-full text-text">
-            Why Choose Innovotio?
-          </h2>
-          <p className="xl:text-xl text-base max-w-md text-[#A3A3A3]">
+          <div>
+            <p className="text-section font-medium">Our Framework</p>
+            <h2 className="pt-1 font-medium xl:text-4xl md:text-3xl text-2xl max-w-sm text-text">
+              Why Choose Innovotio?
+            </h2>
+          </div>
+          <p className="xl:text-lg text-base max-w-sm text-texts">
             Innovotio goes beyond connecting qualified tech talents and
             organizations.
           </p>

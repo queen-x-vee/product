@@ -6,7 +6,7 @@ import {IoIosSchool} from "react-icons/io"
 
 const Talent = () => {
   return (
-    <nav className="absolute top-28 lg:max-w-4xl xl:max-w-5xl 2xl:mx-auto 2xl:container 2xl:left-96 right-14 2xl:max-w-5xl cursor-pointer rounded-xl flex justify-between border border-[#F2F4FC24] border-opacity-10 text-text bg-[#0E1416]">
+    <nav className="absolute top-24 lg:max-w-4xl xl:max-w-6xl  2xl:max-w-6xl 2xl:mx-auto 2xl:container 2xl:left-96 right-14 cursor-pointer rounded-xl flex justify-between border border-[#F2F4FC24] border-opacity-10 text-text bg-[#0E1416]">
       <div className="w-3/6 hover:bg-hover overflow-hidden px-8 max-h-full">
         <div className="py-8">
         <h3 className="text-xl mb-2 flex items-center">
@@ -16,8 +16,8 @@ const Talent = () => {
             Programs Training
           </h3>
           <p className="text-sm lg:text-xs xl:text-sm text-dark">
-            Get started into tech with our training program. Learn the all the
-            basics to land your first job.
+            Get started into tech with our training program. Learn the all you need
+             to land your first industry job.
           </p>
           <Link
             href="/programstraining"
@@ -58,10 +58,10 @@ const Talent = () => {
             </span>{" "}
             Join Innovotio          </h3>
           <p className="text-sm lg:text-xs xl:text-sm text-dark ">
-            We work as an extension of your team and assemble the right
-            team members for every task and project.
+            We work as an extension of your team by assembling the right
+            team members for every project.
           </p>
-          <Link target="_blank" href="/jobapplication">
+          <Link target="_blank" href="/careers">
             <p className="flex items-center mt-5 underline-hover">
               Learn more
               <span className="ml-1 text-lg">{<FiArrowUpRight />}</span>

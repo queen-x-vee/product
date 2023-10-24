@@ -8,7 +8,7 @@ const Session = () => {
     <section className="pt-14 lg:pt-20 ">
       <div className="text-text flex lg:flex-row lg:items-center flex-col justify-between">
         <div>
-          <h1 className="lg:text-4xl text-2xl sm:text-3xl font-medium leading-10 max-w-md md:max-w-full lg:max-w-lg">
+          <h1 className="lg:text-4xl text-2xl md:text-3xl font-medium leading-10 max-w-md md:max-w-lg">
             We also offer a variety of training styles for student
           </h1>
           <div>
@@ -41,7 +41,7 @@ const Session = () => {
             </div>
           </div>
         </div>
-        <div className="flex lg:justify-normal justify-center">
+        <div>
           <Image src={program} alt="coding" width={475} height={416} />
         </div>
       </div>

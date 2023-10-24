@@ -8,7 +8,7 @@ import Vision from "../vision";
 
 const Header = () => {
   return (
-    <header className="pt-5 text-white font-medium">
+    <header className="pt-5 text-white">
       <div className="flex justify-between items-center">
         <div>
           <Image
@@ -22,10 +22,10 @@ const Header = () => {
             Programs Training
           </p>
 
-          <h1 className="lg:text-5xl leading-8 text-3xl max-w-md sm:max-w-2xl">
+          <h1 className="lg:text-5xl text-3xl font-medium max-w-md sm:max-w-2xl">
             Skill up with our talent building and management.
           </h1>
-          <p className="py-3 leading-7 lg:text-base text-sm text-dark max-w-xl">
+          <p className="py-3 leading-7 lg:text-base text-sm text-texts max-w-xl">
             We offer tech courses to prospective talents, by our own highly
             skilled tech professionals and fast track landing you a new job
           </p>

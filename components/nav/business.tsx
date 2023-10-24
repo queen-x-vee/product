@@ -5,7 +5,7 @@ import {MdOutlinePersonPin} from "react-icons/md"
 
 const Business = () => {
   return (
-    <nav className="absolute top-24 lg:max-w-4xl xl:max-w-5xl 2xl:mx-auto 2xl:container 2xl:left-96 right-14 2xl:max-w-5xl cursor-pointer rounded-xl flex justify-between border border-[#F2F4FC24] border-opacity-10 text-text bg-[#0E1416]">
+    <nav className="absolute top-24 lg:max-w-4xl xl:max-w-6xl 2xl:max-w-6xl 2xl:mx-auto 2xl:container 2xl:left-96 right-14  cursor-pointer rounded-xl flex justify-between border border-[#F2F4FC24] border-opacity-10 text-text bg-[#0E1416]">
       <div className="hover:bg-[#182222] overflow-hidden justify-center flex flex-col max-h-full w-full px-5">
         <div className="py-8">
           <h3 className="text-xl mb-2 flex items-center">
