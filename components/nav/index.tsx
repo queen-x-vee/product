@@ -5,7 +5,7 @@ import Logo from "../../public/assets/footer/Logo.svg";
 import mobileLogo from "../../public/assets/navbar/logo.svg";
 import cancel from "../../public/assets/navbar/cancel.svg";
 import arrow from "../../public/assets/navbar/arrow.svg";
-import menu from "../../public/assets/navbar/menu.svg";
+import menu from "../../public/assets/navbar/Menu.svg";
 import About from "./about";
 import Talent from "./Talent";
 import Business from "./business";
