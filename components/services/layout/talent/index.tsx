@@ -29,7 +29,7 @@ const Talent = () => {
             regularly to ensure satisfaction both for businesses and talents.
           </p>
           <Link href="/business" target="_blank">
-            <Button className="my-5">Browse our courses</Button>
+            <Button className="my-5">Get In Touch</Button>
           </Link>
         </div>
       </div>

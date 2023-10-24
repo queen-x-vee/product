@@ -1,5 +1,4 @@
 import FaqDropdown from "@/components/micro/about/faq";
-import React from "react";
 const Data = [
   {
     question: "What is Innovotio about?",

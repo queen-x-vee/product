@@ -7,7 +7,7 @@ function Footer() {
     <footer className="mx-auto container md:p-10 p-5 text-text cursor-pointer">
       <h1
         data-aos="fade-up"
-        className="lg:max-w-2xl max-w-lg lg:text-5xl text-3xl tracking-wide font-medium"
+        className="lg:max-w-2xl max-w-lg lg:text-4xl xl:text-5xl text-3xl tracking-wide font-medium"
       >
         Your one stop for <span className="text-section">talent,</span> event{" "}
         <span className="text-section">and </span> merchandise
