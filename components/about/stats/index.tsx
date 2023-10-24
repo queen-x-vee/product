@@ -35,7 +35,7 @@ const Stats = () => {
             <div className="space-y-3 max-w-xs">
                 <h2 className="text-4xl text-text">100</h2>
                 <p className="text-xl text-texts">
-                  Total number of soft skills Alumni's
+                  Total number of soft skills Alumnis
                 </p>
               </div>
               <div className="space-y-3 max-w-xs">
