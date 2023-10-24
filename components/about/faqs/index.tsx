@@ -32,8 +32,8 @@ const Faqs = () => {
             <p className="text-section font-medium text-sm lg:text-base">
               FAQs
             </p>
-            <h1 className="xl:text-4xl md:text-3xl text-2xl max-w-md font-medium text-white">
-              We may have answered one of your many questions.
+            <h1 className=" lg:text-4xl md:text-3xl text-2xl xl:text-5xl max-w-md font-medium text-white">
+              Frequently Asked Questions
             </h1>
           </div>
         </div>

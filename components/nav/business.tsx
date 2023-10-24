@@ -21,7 +21,7 @@ const Business = () => {
           </p>
           <div className="mt-5">
             <Link href="/services/#merch" className="underline-hover">
-              <p className="flex items-center">
+              <p className="flex items-center underline-hover">
                 Place an order
                 <span className="ml-1 text-lg">{<FiArrowUpRight />}</span>
               </p>
@@ -44,7 +44,7 @@ const Business = () => {
           </p>
           <div className="mt-5">
             <Link href="/services/#recruitment" className="underline-hover">
-              <p className="flex items-center">
+              <p className="flex items-center underline-hover">
                 Recruit a team
                 <span className="ml-1 text-lg">{<FiArrowUpRight />}</span>
               </p>
@@ -65,8 +65,8 @@ const Business = () => {
             regularly to ensure satisfaction both for busniesses and talents.
           </p>
           <div className="mt-5">
-            <Link href="/services/#event" className="underline-hover">
-              <p className="flex items-center">
+            <Link href="/services/#event">
+              <p className="flex items-center underline-hover" >
                 Get event support{" "}
                 <span className="ml-1 text-lg">{<FiArrowUpRight />}</span>
               </p>

@@ -19,7 +19,7 @@ const Description = () => {
         <div className="space-y-5 md:w-full xl:w-5/12 lg:w-5/12">
           <div>
             <p className="text-section font-medium">Our Framework</p>
-            <h2 className="pt-1 font-medium xl:text-4xl md:text-3xl text-2xl max-w-sm text-text">
+            <h2 className="pt-1 font-medium lg:text-4xl md:text-3xl text-2xl xl:text-5xl max-w-sm text-text">
               Why Choose Innovotio?
             </h2>
           </div>
