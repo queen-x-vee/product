@@ -46,7 +46,7 @@ const Session = () => {
         </div>
       </div>
 
-      <hr className="lg:mt-20 mt-14 opacity-10" />
+      <hr className="lg:mt-20 mt-10 opacity-10" />
     </section>
   );
 };

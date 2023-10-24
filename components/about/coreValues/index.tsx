@@ -12,10 +12,10 @@ const CoreValues = () => {
     <div className="pt-14 lg:pt-20 ">
       <div>
         <p className="text-section font-medium text-sm lg:text-base">Beliefs</p>
-        <h1 className="lg:text-5xl text-4xl font-medium text-white mb-7">
+        <h1 className="lg:text-5xl text-4xl font-medium text-white mb-5">
           Our Core Values
         </h1>
-        <div className="text-dark lg:text-lg text-base text-justify  md:max-w-xl font-light">
+        <div className="text-dark lg:text-lg text-base text-justify md:max-w-xl font-light">
           <p>
             Our core values serve as a foundation for Innovotio&apos;s culture
             and guides our actions and decisions as we connect tech talent with

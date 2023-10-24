@@ -20,7 +20,7 @@ const Data = [
 const Faqs = () => {
   return (
     <div className="pt-14 lg:pt-20 ">
-      <div className="pt-14 grid grid-cols-1 lg:grid-cols-2 gap-5 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 ">
         <div className="lg:col-span-1">
           <div>
             <p className="text-section font-medium text-sm lg:text-base">FAQs</p>
