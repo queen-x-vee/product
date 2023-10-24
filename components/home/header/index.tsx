@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="lg:pt-12 pt-6">
       <div className="space-y-5">
-        <h1 className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl font-semibold max-w-md sm:max-w-[480px] lg:max-w-3xl xl:max-w-4xl text-text">
+        <h1 className="xl:text-5xl lg:text-4xl text-3xl font-semibold max-w-md sm:max-w-[480px] lg:max-w-3xl xl:max-w-4xl text-text">
           Get qualified tech talents & event support
         </h1>
         <p className="lg:text-lg text-base sm:max-w-3xl text-texts">

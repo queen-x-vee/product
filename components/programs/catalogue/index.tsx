@@ -557,10 +557,10 @@ const Catalogue = () => {
   return (
     <section className="text-white pt-14 lg:pt-20">
       <div className="text-center flex flex-col">
-        <h1 className="lg:text-5xl text-2xl md:text-3xl font-medium">
+        <h1 className="xl:text-4xl md:text-3xl text-2xl font-medium">
           Explore Our Course Catalogue
         </h1>
-        <p className="md:text-lg text-base text-texts py-4">
+        <p className="text-base text-texts py-4">
           Discover talent training programs to help grow your career.
         </p>
 
