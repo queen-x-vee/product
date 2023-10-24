@@ -19,6 +19,7 @@ const config: Config = {
         dark: "#A3A3A3",
         hover: "#182222",
         primary: "#0E1416",
+        form: "#F5F5F5",
       },
     },
   },
