@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const route = router.pathname;
   console.log(route)
-  const exempted_paths = /^\/business|^\/careers/;
+  const exempted_paths = /^\/services\/recruit|^\/services\/event|^\/services\/talent|^\/services\/merch|^\/services\/merch|^\/404/;
   return (
     <div className="font-inter overflow-x-hidden bg-primary">
       {exempted_paths.test(route) ? (

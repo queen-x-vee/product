@@ -5,11 +5,13 @@ import Consultancy from "./layout/consultancy";
 import Event from "./layout/event";
 import Recruitment from "./layout/recuitment";
 import Talent from "./layout/talent";
+import Merch from "./layout/merch";
 
 const Services = () => {
   return (
     <div>
       <Header />
+      <Merch/>
       <Recruitment/>
       <Event/>
       <Consultancy/>

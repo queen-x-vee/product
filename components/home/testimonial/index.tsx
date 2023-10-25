@@ -24,7 +24,7 @@ const Testimonial = () => {
         </div>
         <Slider
           {...settings}
-          className="text-white font-light md:text-xl md:max-w-2xl max-w-[300px] sm:max-w-[355px] text-base"
+          className="text-text font-light md:text-xl md:max-w-2xl max-w-[300px] sm:max-w-[355px] text-base"
         >
           <div>
           <p className="lg:text-2xl leading-9">

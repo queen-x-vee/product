@@ -12,7 +12,7 @@ const Careers = () => {
             <p className="text-section font-medium text-sm lg:text-base">
               Careers
             </p>
-            <h2 className=" lg:text-4xl md:text-3xl text-2xl xl:text-5xl font-medium max-w-2xl text-white">
+            <h2 className=" lg:text-4xl md:text-3xl text-2xl xl:text-5xl font-medium xl:max-w-2xl max-w-lg text-text">
               This is the ideal moment to join us in shaping Innovotio
             </h2>
           </div>

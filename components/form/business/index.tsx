@@ -89,7 +89,7 @@ const Business = () => {
             </Link>
 
             <figcaption>
-              <p className="pt-8 leading-8 text-white text-base font-medium italic">
+              <p className="pt-8 leading-8 text-text text-base font-medium italic">
                 Your super-stop for the tech talents, tech events and swag
                 items.
               </p>

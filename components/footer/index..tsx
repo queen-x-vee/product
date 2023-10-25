@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Copyright from "./copyright";
+import Button from "../micro/button";
 
 function Footer() {
   return (
@@ -25,9 +26,9 @@ function Footer() {
           <div className="">
             <Link href="/business" legacyBehavior>
               <a target="_blank">
-                <button className="hover:bg-btnHoverYellow h-11 font-medium rounded-xl text-lg mt-7  w-40 border-black border  bg-white text-black">
+                <Button className="my-5 bg-text text-black">
                   Get In Touch
-                </button>
+                </Button>
               </a>
             </Link>
           </div>

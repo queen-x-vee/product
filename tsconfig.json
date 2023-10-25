@@ -17,6 +17,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/services/layout"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/services/layout", "pages/services/event"],
   "exclude": ["node_modules"]
 }

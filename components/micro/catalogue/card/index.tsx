@@ -73,7 +73,7 @@ export default CatalogueCard;
 const PopUp = ({ modal, handleModal, data, name }: popupProps) => {
   return (
     <Modal open={modal} onClose={handleModal} className="bg-btnHoverBlack ">
-      <ModalContent className="bg-btnHoverBlack text-white md:w-[700px] w-[360px] overflow-y-scroll px-5 rounded-2xl h-[85vh] text-xs md:text-sm flex flex-col justify-between text-center">
+      <ModalContent className="bg-btnHoverBlack text-text md:w-[700px] w-[360px] overflow-y-scroll px-5 rounded-2xl h-[85vh] text-xs md:text-sm flex flex-col justify-between text-center">
         <section>
           <div className="flex items-center justify-between">
             <h1 className="text-lg md:text-xl text-start py-7 font-medium">
@@ -81,7 +81,7 @@ const PopUp = ({ modal, handleModal, data, name }: popupProps) => {
             </h1>
             <div
               onClick={handleModal}
-              className="text-lg bg-white text-black h-7 w-7 rounded-full flex items-center justify-center"
+              className="text-lg bg-text text-black h-7 w-7 rounded-full flex items-center justify-center"
             >
               <AiOutlineClose />
             </div>

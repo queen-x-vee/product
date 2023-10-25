@@ -6,7 +6,7 @@ const Community = () => {
   return (
     <section className="pt-14 lg:pt-20">
       <div
-        className="flex lg:flex-row flex-col justify-between lg:items-center text-white"
+        className="flex lg:flex-row flex-col justify-between lg:items-center text-text"
         id="community"
       >
         <div>
@@ -25,13 +25,13 @@ const Community = () => {
             individuals to tackle challenges collectively, push boundaries, and
             drive positive change within the tech industry.
           </p>
-          <Link href="/business" target="_blank">
+          <Link href="http://bit.ly/Innovotio" target="_blank">
             <Button className="my-6">Join Innovotio</Button>
           </Link>
         </div>
         <div>
           <Image
-            src="../../../../assets/services/Community2.svg"
+            src="../../../../assets/services/com.svg"
             alt="community"
             width={590}
             height={400}

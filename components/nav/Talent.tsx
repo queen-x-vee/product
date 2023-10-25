@@ -42,7 +42,7 @@ const Talent = () => {
             Innovotio has an active community to provide support for recuiters,
             organizations and for tech talents.
           </p>
-          <Link href="/aboutus/#community">
+          <Link href="/services/#community">
             <p className="flex items-center mt-5 underline-hover">
               Join us
               <span className="ml-1 text-lg">{<FiArrowUpRight />}</span>
@@ -61,7 +61,7 @@ const Talent = () => {
             We work as an extension of your team by assembling the right
             team members for every project.
           </p>
-          <Link target="_blank" href="/careers">
+          <Link target="_blank" href="/services/#talent">
             <p className="flex items-center mt-5 underline-hover">
               Learn more
               <span className="ml-1 text-lg">{<FiArrowUpRight />}</span>
