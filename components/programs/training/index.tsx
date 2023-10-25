@@ -18,7 +18,7 @@ const Training = () => {
     <section className="pt-14 lg:pt-20 text-white">
       <div>
         <div>
-          <h1 className="lg:text-4xl md:text-3xl text-2xl font-medium">Talent Building Programs</h1>
+          <h1 className=" lg:text-4xl md:text-3xl text-2xl xl:text-5xl font-medium">Talent Building Programs</h1>
           <p className="text-base lg:text-lg max-w-3xl text-texts font-light py-5">
             Put your best foot forward and fast track landing a new tech job
             with innovotio.

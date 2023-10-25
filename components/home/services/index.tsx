@@ -16,7 +16,7 @@ const Services = () => {
         <div className="space-y-5">
           <div>
             <p className="text-section font-medium">Services</p>
-            <h2 className="pt-1 font-medium xl:text-4xl md:text-3xl text-2xl text-text">
+            <h2 className="pt-1 font-medium lg:text-4xl md:text-3xl text-2xl xl:text-5xl text-text">
               Our Services
             </h2>
           </div>

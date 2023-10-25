@@ -29,7 +29,7 @@ const Recruitment = () => {
           </p>
 
           <Link href="/business" target="_blank">
-            <Button className="my-5">Recruitment</Button>
+            <Button className="my-5">Recruit A Team</Button>
           </Link>
         </div>
         <div>
