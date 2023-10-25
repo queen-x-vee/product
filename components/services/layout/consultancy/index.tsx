@@ -44,24 +44,24 @@ const Consultancy = () => {
       <div>
       <div className="lg:pt-10 pt-5 grid grid-cols-1 lg:grid-cols-12 gap-4">
         <div className="lg:col-span-4">
-          <Card src={Talent} text="Access to a vast and diverse network of tech professionals at all experience levels." title="Tech Talent" />
+          <Card src={Talent} text="Tailored consultation services to meet the specific needs of SMEs, startups, and corporations." title="Customized Solutions" />
         </div>
         <div className="lg:col-span-4">
-          <Card src={IndustryExpertise} text="In-depth knowledge of the tech industry, enabling precise candidate matching." title="Industry Expertise" />
+          <Card src={IndustryExpertise} text="Access to seasoned consultants with expertise in various industries." title="Experienced Consultants" />
         </div>
         <div className="lg:col-span-4">
-          <Card src={Feedback} text="Tailored recruitment solutions to match the specific needs and culture of tech organizations." title="Customized Hiring" />
+          <Card src={Feedback} text="Comprehensive market analysis and insights for informed decision-making." title="Market Research" />
         </div>
       </div>
       <div className="lg:pt-10 pt-5 grid grid-cols-1 lg:grid-cols-12 gap-4">
         <div className="lg:col-span-4">
-          <Card src={FlexibleHiringModels} text=" Options for full-time, part-time, contract, or remote hiring to meet various needs." title="Flexible Hiring Models" />
+          <Card src={FlexibleHiringModels} text=" Options for full-time, part-time, contract, or remote hiring to meet various needs." title="Strategic Guidance" />
         </div>
         <div className="lg:col-span-4">
-          <Card src={ContinousFeedback} text="A feedback loop for continuous improvement and candidate-client alignment." title="Continous Feedback" />
+          <Card src={ContinousFeedback} text="Complete assistance in navigating legal requirements and regulations." title="Legal Compliance" />
         </div>
         <div className="lg:col-span-4">
-          <Card src={StreamlinedProcess} text="Efficient and time-saving recruitment processes to minimize hiring timelines." title="Streamlined Process" />
+          <Card src={StreamlinedProcess} text="Industry strategies for cost-effective project and business management." title="Cost Optimization" />
         </div>
       </div>
       </div>

@@ -44,7 +44,7 @@ const Talent = () => {
       <div>
       <div className="lg:pt-10 pt-5 grid grid-cols-1 lg:grid-cols-12 gap-4">
         <div className="lg:col-span-4">
-          <Card src={Talents} text="Access to a vast and diverse network of tech professionals at all experience levels." title="Tech Talent" />
+          <Card src={Talents} text="Ongoing training and upskilling opportunities to keep tech talent updated." title="Skill Development" />
         </div>
         <div className="lg:col-span-4">
           <Card src={IndustryExpertise} text="In-depth knowledge of the tech industry, enabling precise candidate matching." title="Industry Expertise" />
