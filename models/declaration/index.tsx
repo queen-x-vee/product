@@ -51,6 +51,13 @@ export interface aboutCardProps {
   text: string;
   title: string;
 }
+export interface CardProps {
+  //icon: string | React.ReactNode;
+  text: string;
+  title: string;
+  src: string;
+}
+
 
 export interface aboutFaqProps {
   question: string;

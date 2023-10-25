@@ -12,7 +12,6 @@ const Values = ({
 
       <div className="flex-col items-start space-y-5 font-medium text-text">
         <Image src={icon} alt="Careers"  />
-        <h3 className="xl:text-2xl text-xl">{title}</h3>
       </div>
       <p className="text-base xl:text-lg text-justify leading-6 text-[#D9D9D9E5]">{text}</p>
     </div>
