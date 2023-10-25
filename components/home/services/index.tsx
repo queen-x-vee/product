@@ -6,7 +6,7 @@ import { TbUserSearch } from "react-icons/tb";
 import { BsFillGiftFill } from "react-icons/bs";
 import { FaPeopleCarry } from "react-icons/fa";
 import Button from "@/components/micro/button";
-import ServiceCard from "@/components/micro/services/card";
+import ServiceCard from "@/components/micro/services";
 
 const Services = () => {
   return (
