@@ -18,7 +18,7 @@ const Merch = () => {
             We specialize in creating and providing branded merchandise and
             promotional products for technology companies and their communities.
             Our primary focus is to design and produce merchandise that reflects
-            tech companies' brand identity, values, and culture.
+            tech companies brand identity, values, and culture.
           </p>
 
           <Link href="/services/merchandise" target="_blank">
