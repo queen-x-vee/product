@@ -3,11 +3,8 @@ import Image from "next/image";
 import Button from "@/components/micro/button";
 import Card from "@/components/micro/services/card";
 import IndustryExpertise from "../../../../public/assets/services/industryExpertise.svg"
-import Talent from "../../../../public/assets/services/techTalent.svg"
 import Feedback from "../../../../public/assets/services/feedback.svg"
-import StreamlinedProcess from '../../../../public/assets/services/streamlinedProcess.svg'
 import ContinousFeedback from '../../../../public/assets/services/continousFeedback.svg'
-import FlexibleHiringModels from '../../../../public/assets/services/flexibleHiringModels.svg'
 import ContrivedPlanning from '../../../../public/assets/services/contrivedPlanning.svg'
 import VendorPlanning from '../../../../public/assets/services/vendorPlanning.svg'
 import BudgetOptimization from '../../../../public/assets/services/budgetOptimization.svg'

@@ -2,13 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import Button from "@/components/micro/button";
 import Card from "@/components/micro/services/card";
-import {CgNotes} from 'react-icons/cg'
 import IndustryExpertise from "../../../../public/assets/services/industryExpertise.svg"
 import Talents from "../../../../public/assets/services/techTalent.svg"
 import Feedback from "../../../../public/assets/services/feedback.svg"
-import StreamlinedProcess from '../../../../public/assets/services/streamlinedProcess.svg'
-import ContinousFeedback from '../../../../public/assets/services/continousFeedback.svg'
-import FlexibleHiringModels from '../../../../public/assets/services/flexibleHiringModels.svg'
 import SkillDevelopment from '../../../../public/assets/services/skillDevelopment.svg'
 import DiverseOpportunities from '../../../../public/assets/services/diverseOpportunities.svg'
 import JobMarketInsights from '../../../../public/assets/services/jobMarketInsights.svg'

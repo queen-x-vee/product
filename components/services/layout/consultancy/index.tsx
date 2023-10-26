@@ -3,7 +3,6 @@ import Link from "next/link";
 import Button from "@/components/micro/button";
 import Image from "next/image";
 import Card from "@/components/micro/services/card";
-import {CgNotes} from 'react-icons/cg'
 import IndustryExpertise from "../../../../public/assets/services/industryExpertise.svg"
 import Talent from "../../../../public/assets/services/techTalent.svg"
 import Feedback from "../../../../public/assets/services/feedback.svg"
