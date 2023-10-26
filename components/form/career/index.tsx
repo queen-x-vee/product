@@ -185,7 +185,7 @@ const Career = () => {
                   placeholder="resume link *"
                   onChange={(e) => setMail({ ...mail, resume: e.target.value })}
                   name="form_resume"
-                  className="md:w-12/12 lg:w-11/12  bg-white xl:w-96 h-14 mb-4 lg:h-12 py-2 px-4 rounded-md cursor-pointer"
+                  className="md:w-12/12 lg:w-11/12  bg-text xl:w-96 h-14 mb-4 lg:h-12 py-2 px-4 rounded-md cursor-pointer"
                   required
                 />
               </div>

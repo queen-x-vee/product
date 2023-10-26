@@ -12,7 +12,7 @@ import BudgetOptimization from '../../../../public/assets/services/budgetOptimiz
 
 const Event = () => {
   return (
-    <section className="lg:pt-20 pt-14 text-white">
+    <section className="lg:pt-20 pt-14 text-text">
       <div
         className="flex lg:flex-row flex-col-reverse lg:space-x-5 justify-evenly lg:items-center"
         id="event"
@@ -26,17 +26,15 @@ const Event = () => {
           />
         </div>
         <div className="">
-          <h4 className="text-section font-medium text-lg">
-            Tech Event Management
-          </h4>
+          <h4 className="text-section font-medium">Tech Event Management</h4>
           <h1 className="pt-1 font-medium xl:text-4xl md:text-3xl text-2xl md:max-w-lg">
-            Let us handle all the details for a memorable experience
+            Delight in a seamlessly managed event
           </h1>
           <p className="pt-5 text-base text-justify text-texts lg:max-w-sm xl:max-w-lg">
-            We endure your tech event goes off without a hitch and give your
+            We ensure your tech event goes off without a hitch and give your
             guests a quality time by organizing your tech event.
           </p>
-          <Link href="/business" target="_blank">
+          <Link href="/services/event" target="_blank">
             <Button className="my-5">Get Event Support</Button>
           </Link>
         </div>

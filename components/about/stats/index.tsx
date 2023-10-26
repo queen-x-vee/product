@@ -5,7 +5,7 @@ const Stats = () => {
         <div className="xl:max-w-[40%]">
           <div>
             <p className="text-section font-medium text-sm lg:text-base">Stats</p>
-            <h1 className=" lg:text-4xl md:text-3xl text-2xl xl:text-5xl xl:max-w-lg max-w-sm font-medium text-white mb-7">
+            <h1 className=" lg:text-4xl md:text-3xl text-2xl xl:text-5xl xl:max-w-lg max-w-sm font-medium text-text mb-7">
               We ensure that all our services offer value.
             </h1>
           </div>

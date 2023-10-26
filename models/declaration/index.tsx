@@ -42,6 +42,7 @@ export interface serviceCardProps {
   icon: string | React.ReactNode;
   text: string;
   title: string;
+  route:string;
   className: string;
   illustration: string;
   illustration2?: string;

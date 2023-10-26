@@ -14,11 +14,13 @@ const Recruitment = () => {
   return (
     <section className="pt-14 lg:pt-20">
       <div
-        className="flex lg:flex-row flex-col justify-evenly lg:items-center text-white"
+        className="flex lg:flex-row flex-col justify-between lg:items-center text-text"
         id="recruitment"
       >
         <div className="">
-          <h4 className="text-section font-medium">Recruitment</h4>
+          <h4 className="text-section font-medium">
+            Recruitment
+          </h4>
           <h1 className="pt-1 font-medium xl:text-4xl md:text-3xl text-2xl md:max-w-lg">
             Never be bothered by external recruitments
           </h1>
@@ -28,7 +30,7 @@ const Recruitment = () => {
             to recruitment hassle.
           </p>
 
-          <Link href="/business" target="_blank">
+          <Link href="/services/recruit" target="_blank">
             <Button className="my-5">Recruit A Team</Button>
           </Link>
         </div>

@@ -3,7 +3,7 @@ import { trainingProps } from "@/models/declaration";
 
 const TrainingCard = ({timeFrame, image, quater}: trainingProps) => {
   return (
-    <section className="text-white pt-14 flex lg:flex-row flex-col-reverse justify-between lg:items-center">
+    <section className="text-text pt-14 flex lg:flex-row flex-col-reverse justify-between lg:items-center">
     <div className="">
       <Image src={image} alt="coding" width={450} height={450} />
     </div>

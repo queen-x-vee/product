@@ -12,7 +12,7 @@ const CoreValues = () => {
     <div className="pt-14 lg:pt-20 ">
       <div>
         <p className="text-section font-medium text-sm lg:text-base">Beliefs</p>
-        <h1 className="lg:text-4xl md:text-3xl text-2xl xl:text-5xl font-medium text-white">
+        <h1 className="lg:text-4xl md:text-3xl text-2xl xl:text-5xl font-medium text-text">
           Our Core Values
         </h1>
         <div className="text-texts lg:text-lg text-base text-justify md:max-w-xl font-light pt-3">

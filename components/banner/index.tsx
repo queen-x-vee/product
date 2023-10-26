@@ -4,7 +4,7 @@ import Button from "../micro/button";
 const Banner = () => {
   return (
     <section className="pt-14 lg:pt-20">
-      <div className="flex-col lg:flex-row lg:items-center lg:justify-around text-white flex">
+      <div className="flex-col lg:flex-row lg:items-center lg:justify-around text-text flex">
         <div className="space-y-5">
           <h1 className=" lg:text-4xl md:text-3xl text-2xl xl:text-5xl font-medium max-w-sm lg:max-w-lg ">
             Get top quality services at Innovotio
@@ -22,7 +22,7 @@ const Banner = () => {
           </Link>
           <Link href="/business" legacyBehavior>
             <a target="_blank">
-              <Button className="bg-white text-black">Get Event Support</Button>
+              <Button className="bg-text text-black">Get Event Support</Button>
             </a>
           </Link>
         </div>

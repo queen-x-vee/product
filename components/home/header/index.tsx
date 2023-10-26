@@ -12,8 +12,8 @@ const Header = () => {
           We provide qualified tech talents to hiring organizations, organize
           tech events and curate branded merchandise.
         </p>
-        <div className="flex sm:flex-row flex-col gap-x-3 space-y-4 md:gap-y-0 pt-3 sm:max-w-md items-center justify-center sm:justify-between">
-          <Button className="w-full sm:w-fit bg-white text-black">
+        <div className="flex sm:flex-row flex-col gap-x-3 space-y-4 md:space-y-0 pt-3 sm:max-w-md items-center justify-center sm:justify-between">
+          <Button className="w-full sm:w-fit bg-text text-black">
             Hire Tech Talent
           </Button>
           <Button className="w-full sm:w-fit"> Order a Merch</Button>

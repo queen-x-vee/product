@@ -1,7 +1,6 @@
 import React from "react";
-import Link from "next/link";
-import Button from "@/components/micro/button";
 import Image from "next/image";
+import Button from "@/components/micro/button";
 import Card from "@/components/micro/services/card";
 import IndustryExpertise from "../../../../public/assets/services/industryExpertise.svg"
 import Talent from "../../../../public/assets/services/techTalent.svg"
@@ -14,7 +13,7 @@ const Consultancy = () => {
   return (
     <section className="pt-14 lg:pt-20">
       <div
-        className="flex lg:flex-row flex-col justify-between lg:items-center text-white"
+        className="flex lg:flex-row flex-col justify-between lg:items-center text-text"
         id="consultancy"
       >
         <div className="">
@@ -27,9 +26,9 @@ const Consultancy = () => {
             business launch and staffing requirements for SMEs, startups and
             corporations.
           </p>
-          <Link href="/business" target="_blank">
+          <a href="mailto:innovotioworkforce@gmail.com" >
             <Button className="my-6">Book A Session </Button>
-          </Link>
+          </a>
         </div>
         <div>
           <Image
