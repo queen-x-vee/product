@@ -2,13 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 import Button from "@/components/micro/button";
 import Card from "@/components/micro/services/card";
-import {CgNotes} from 'react-icons/cg'
-import IndustryExpertise from "../../../../public/assets/services/industryExpertise.svg"
-import Talent from "../../../../public/assets/services/techTalent.svg"
-import Feedback from "../../../../public/assets/services/feedback.svg"
-import StreamlinedProcess from '../../../../public/assets/services/streamlinedProcess.svg'
-import ContinousFeedback from '../../../../public/assets/services/continousFeedback.svg'
-import FlexibleHiringModels from '../../../../public/assets/services/flexibleHiringModels.svg'
+import { CgNotes } from "react-icons/cg";
+import IndustryExpertise from "../../../../public/assets/services/industryExpertise.svg";
+import Talent from "../../../../public/assets/services/techTalent.svg";
+import Feedback from "../../../../public/assets/services/feedback.svg";
+import StreamlinedProcess from "../../../../public/assets/services/streamlinedProcess.svg";
+import ContinousFeedback from "../../../../public/assets/services/continousFeedback.svg";
+import FlexibleHiringModels from "../../../../public/assets/services/flexibleHiringModels.svg";
 
 const Recruitment = () => {
   return (
@@ -18,9 +18,7 @@ const Recruitment = () => {
         id="recruitment"
       >
         <div className="">
-          <h4 className="text-section font-medium">
-            Recruitment
-          </h4>
+          <h4 className="text-section font-medium">Recruitment</h4>
           <h1 className="pt-1 font-medium xl:text-4xl md:text-3xl text-2xl md:max-w-lg">
             Never be bothered by external recruitments
           </h1>
@@ -44,28 +42,50 @@ const Recruitment = () => {
         </div>
       </div>
       <div>
-      <div className="lg:pt-10 pt-5 grid grid-cols-1 lg:grid-cols-12 gap-4">
-        <div className="lg:col-span-4">
-          <Card src={Talent} text="Access to a vast and diverse network of tech professionals at all experience levels." title="Tech Talent" />
+        <div className="lg:pt-10 pt-5 grid grid-cols-1 lg:grid-cols-3 gap-y-10 gap-x-5">
+          <div>
+            <Card
+              src={Talent}
+              text="Access to a vast and diverse network of tech professionals at all experience levels."
+              title="Tech Talent"
+            />
+          </div>
+          <div>
+            <Card
+              src={IndustryExpertise}
+              text="In-depth knowledge of the tech industry, enabling precise candidate matching."
+              title="Industry Expertise"
+            />
+          </div>
+          <div>
+            <Card
+              src={Feedback}
+              text="Tailored recruitment solutions to match the specific needs and culture of tech organizations."
+              title="Customized Hiring"
+            />
+          </div>
+          <div>
+            <Card
+              src={FlexibleHiringModels}
+              text=" Options for full-time, part-time, contract, or remote hiring to meet various needs."
+              title="Flexible Hiring Models"
+            />
+          </div>
+          <div>
+            <Card
+              src={ContinousFeedback}
+              text="A feedback loop for continuous improvement and candidate-client alignment."
+              title="Continous Feedback"
+            />
+          </div>
+          <div>
+            <Card
+              src={StreamlinedProcess}
+              text="Efficient and time-saving recruitment processes to minimize hiring timelines."
+              title="Streamlined Process"
+            />
+          </div>
         </div>
-        <div className="lg:col-span-4">
-          <Card src={IndustryExpertise} text="In-depth knowledge of the tech industry, enabling precise candidate matching." title="Industry Expertise" />
-        </div>
-        <div className="lg:col-span-4">
-          <Card src={Feedback} text="Tailored recruitment solutions to match the specific needs and culture of tech organizations." title="Customized Hiring" />
-        </div>
-      </div>
-      <div className="lg:pt-10 pt-5 grid grid-cols-1 lg:grid-cols-12 gap-4">
-        <div className="lg:col-span-4">
-          <Card src={FlexibleHiringModels} text=" Options for full-time, part-time, contract, or remote hiring to meet various needs." title="Flexible Hiring Models" />
-        </div>
-        <div className="lg:col-span-4">
-          <Card src={ContinousFeedback} text="A feedback loop for continuous improvement and candidate-client alignment." title="Continous Feedback" />
-        </div>
-        <div className="lg:col-span-4">
-          <Card src={StreamlinedProcess} text="Efficient and time-saving recruitment processes to minimize hiring timelines." title="Streamlined Process" />
-        </div>
-      </div>
       </div>
       <hr className="lg:mt-20 mt-14 opacity-10" />
     </section>

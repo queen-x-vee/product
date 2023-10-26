@@ -2,13 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import Button from "@/components/micro/button";
 import Card from "@/components/micro/services/card";
-import IndustryExpertise from "../../../../public/assets/services/industryExpertise.svg"
-import Feedback from "../../../../public/assets/services/feedback.svg"
-import ContinousFeedback from '../../../../public/assets/services/continousFeedback.svg'
-import ContrivedPlanning from '../../../../public/assets/services/contrivedPlanning.svg'
-import VendorPlanning from '../../../../public/assets/services/vendorPlanning.svg'
-import BudgetOptimization from '../../../../public/assets/services/budgetOptimization.svg'
-
+import IndustryExpertise from "../../../../public/assets/services/industryExpertise.svg";
+import Feedback from "../../../../public/assets/services/feedback.svg";
+import ContinousFeedback from "../../../../public/assets/services/continousFeedback.svg";
+import ContrivedPlanning from "../../../../public/assets/services/contrivedPlanning.svg";
+import VendorPlanning from "../../../../public/assets/services/vendorPlanning.svg";
+import BudgetOptimization from "../../../../public/assets/services/budgetOptimization.svg";
 
 const Event = () => {
   return (
@@ -40,28 +39,50 @@ const Event = () => {
         </div>
       </div>
       <div>
-      <div className="lg:pt-10 pt-5 grid grid-cols-1 lg:grid-cols-12 gap-4">
-        <div className="lg:col-span-4">
-          <Card src={ContrivedPlanning} text="Tailored event planning to match the unique goals and theme of the tech event." title="Contrived Planning" />
+        <div className="lg:pt-10 pt-5 grid grid-cols-1 lg:grid-cols-3 gap-y-10 gap-x-5">
+          <div>
+            <Card
+              src={ContrivedPlanning}
+              text="Tailored event planning to match the unique goals and theme of the tech event."
+              title="Contrived Planning"
+            />
+          </div>
+          <div>
+            <Card
+              src={VendorPlanning}
+              text="Coordination of vendors, speakers, and logistics for a seamless & awesome event."
+              title="Vendor Management"
+            />
+          </div>
+          <div>
+            <Card
+              src={IndustryExpertise}
+              text="Access to experienced event managers with deep understanding of tech industries."
+              title="Industry Expertise"
+            />
+          </div>
+          <div>
+            <Card
+              src={Feedback}
+              text=" Facilitation of meaningful connections and networking sessions for attendees."
+              title="Networking Opportunities"
+            />
+          </div>
+          <div>
+            <Card
+              src={BudgetOptimization}
+              text="Strategies for cost-effective event management without compromising quality."
+              title="Budget Optimization"
+            />
+          </div>
+          <div>
+            <Card
+              src={ContinousFeedback}
+              text="Evaluation and feedback sessions for continuous improvement and future event planning."
+              title="Post-Event Analysis"
+            />
+          </div>
         </div>
-        <div className="lg:col-span-4">
-          <Card src={VendorPlanning} text="Coordination of vendors, speakers, and logistics for a seamless & awesome event." title="Vendor Management" />
-        </div>
-        <div className="lg:col-span-4">
-          <Card src={IndustryExpertise} text="Access to experienced event managers with deep understanding of tech industries." title="Industry Expertise" />
-        </div>
-      </div>
-      <div className="lg:pt-10 pt-5 grid grid-cols-1 lg:grid-cols-12 gap-4">
-        <div className="lg:col-span-4">
-          <Card src={Feedback} text=" Facilitation of meaningful connections and networking sessions for attendees." title="Networking Opportunities" />
-        </div>
-        <div className="lg:col-span-4">
-          <Card src={BudgetOptimization} text="Strategies for cost-effective event management without compromising quality." title="Budget Optimization" />
-        </div>
-        <div className="lg:col-span-4">
-          <Card src={ContinousFeedback} text="Evaluation and feedback sessions for continuous improvement and future event planning." title="Post-Event Analysis" />
-        </div>
-      </div>
       </div>
       <hr className="lg:mt-20 mt-14 opacity-10" />
     </section>
