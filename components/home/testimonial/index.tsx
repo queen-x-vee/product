@@ -1,8 +1,11 @@
+import "swiper/css";
 import Image from "next/image";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/free-mode";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, FreeMode, Pagination, Navigation } from "swiper/modules";
 import Quotation from "../../../public/assets/testimonial/Quote.svg";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 const Testimonial = () => {
   const settings = {
@@ -15,61 +18,83 @@ const Testimonial = () => {
     pauseOnHover: true,
     arrows: false,
   };
-
+  const data = [
+    {
+      name: "Destiny Usiomoifo",
+      company: "CEO/Founder of Vinc & Eliz",
+      image: "../../../assets/testimonial/destiny.svg",
+      testimonial: `Working with Innovotio was a seamless one and I love how they
+      hold your hand all through the process. The service was top notch
+      and even after the end of our contract, they were still
+      supportive.`,
+    },
+    {
+      name: "Cynthia Udoh",
+      company: " Content Creator at PennyTree",
+      image: "../../../assets/testimonial/destiny.svg",
+      testimonial: `I currently intern as a content creator at PennyTree via
+      Innovotio. As a content writer at PennyTree, the experience has
+      been valuable in honing my skills and gaining practical
+      knowledge in content creation.`,
+    },
+    {
+      name: "Precious Ogiemwonyi",
+      company: "Graphic Designer at Ivendigital",
+      image: "../../../assets/testimonial/destiny.svg",
+      testimonial: `Innovotio matched me with Startup Launchcode. I am already
+      enjoying my role here as one of the graphic designers. The tasks
+      keep pushing me to think outside the box and deep down, I know
+      have been perfectly matched thanks to Innovotio.`,
+    },
+    {
+      name: "Cynthia Udoh",
+      company: " Content Creator at PennyTree",
+      image: "../../../assets/testimonial/destiny.svg",
+      testimonial: `I currently intern as a content creator at PennyTree via
+      Innovotio. As a content writer at PennyTree, the experience has
+      been valuable in honing my skills and gaining practical
+      knowledge in content creation.`,
+    },
+  ];
   return (
     <section className="pt-14 lg:pt-20">
-      <div className="flex flex-col justify-center text-center items-center">
-        <div className="lg:flex pb-8">
-          <Image alt="quotation mark" src={Quotation} width={60} />
-        </div>
-        <Slider
-          {...settings}
-          className="text-text font-light md:text-xl md:max-w-2xl max-w-[300px] sm:max-w-[355px] text-base"
+      <div className="flex flex-col">
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          freeMode={true}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          navigation={true}
+          modules={[FreeMode, Autoplay, Navigation]}
+          className="max-w-[100%] lg:max-w-[100%]"
         >
-          <div>
-          <p className="lg:text-2xl leading-9">
-              Working with Innovotio was a seamless one and I love how they hold
-              your hand all through the process. The service was topnotch and
-              even after the end of our contract, they were still supportive.
-            </p>
-            <div className="py-4 flex flex-col max-w-full justify-center items-center">
-              <p className="text-sm">Destiny Usiomoifo</p>
-              <div className="text-sm flex justify-between text-text py-2">
-                <p>CEO/Founder of Vinc & Eliz</p>
+          {data.map((client) => (
+            <SwiperSlide key={client.name}>
+              <div className="mx-20">
+                <div className="pb-8">
+                  <Image alt="quotation mark" src={Quotation} width={60} />
+                </div>
+                <div className="text-text flex justify-between items-center">
+                  <div>
+                    <p className="lg:text-2xl font-space text-justify max-w-xl font-light leading-8">
+                      {client.testimonial}
+                    </p>
+                    <div className="pt-8 flex flex-col max-w-full">
+                      <p className="text-sm">{client.name}</p>
+                      <div className="text-sm flex justify-between text-texts tfont-light py-2">
+                        <p>{client.company}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <img src={client.image} className="rounded-full w-72 h-72" />
+                </div>
               </div>
-            </div>
-          </div>
-          <div>
-          <p className="lg:text-2xl leading-9">
-              I currently intern as a content creator at PennyTree via
-              Innovotio. As a content writer at PennyTree, the experience has
-              been valuable in honing my skills and gaining practical knowledge
-              in content creation.
-            </p>
-
-            <div className="py-4 flex flex-col max-w-full justify-center items-center">
-              <p className="text-sm">Cynthia Udoh</p>
-              <div className="text-sm flex justify-between text-text py-2">
-                <p> Content Creator at PennyTree</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <p className="lg:text-2xl leading-9">
-              Innovotio matched me with Startup Launchcode. I am already
-              enjoying my role here as one of the graphic designers. The tasks
-              keep pushing me to think outside the box and deep down, I know
-              have been perfectly matched thanks to Innovotio.
-            </p>
-
-            <div className="py-4 flex flex-col max-w-full justify-center items-center">
-              <p className="text-sm">Precious Ogiemwonyi</p>
-              <div className="text-sm flex justify-between text-text py-2">
-                <p> Graphic Designer at Ivendigital</p>
-              </div>
-            </div>
-          </div>
-        </Slider>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
       <hr className="lg:mt-20 mt-14 opacity-10" />
     </section>

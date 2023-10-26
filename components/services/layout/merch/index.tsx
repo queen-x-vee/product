@@ -6,7 +6,7 @@ const Merch = () => {
   return (
     <section className="lg:pt-20 pt-14 text-text">
       <div
-        className="flex lg:flex-row flex-col lg:space-x-5 justify-evenly lg:items-center"
+        className="flex flex-col lg:space-x-5"
         id="merch"
       >
         <div className=" flex flex-col">
@@ -25,14 +25,20 @@ const Merch = () => {
             <Button className="my-5">Order Merchandise</Button>
           </Link>
         </div>
-        <div className="pt-12 hidden sm:block">
+        {/* <div className="flex pt-12 space-x-5">
           <Image
-            src="../../../../assets/services/Community2.svg"
-            alt="community"
-            width={590}
-            height={400}
+            src="../../../../assets/services/merch1.svg"
+            alt="boot setup"
+            width={420}
+            height={513}
           />
-        </div>
+             <Image
+            src="../../../../assets/services/merch2.svg"
+            alt="water bottles"
+            width={700}
+            height={513}
+          />
+        </div> */}
       </div>
       <hr className="lg:mt-20 mt-14 opacity-10" />
     </section>
