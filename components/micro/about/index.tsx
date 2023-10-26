@@ -8,7 +8,7 @@ const Values = ({
   
 }: aboutCardProps) => {
   return (
-    <div className="space-y-3 p-5 lg:h-[240px] rounded-[20px] bg-hover ">
+    <div className="space-y-5 p-5 lg:h-[215px] rounded-[20px] bg-hover ">
 
       <div className="flex-col items-start space-y-5 font-medium text-text">
         <Image src={icon} alt="Careers"  />
