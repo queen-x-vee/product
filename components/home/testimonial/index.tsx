@@ -73,23 +73,23 @@ const Testimonial = () => {
         >
           {data.map((client) => (
             <SwiperSlide key={client.name}>
-              <div className="mx-20">
-                <div className="pb-8">
+              <div className="md:mx-20 mx-14 xl:text-start text-center">
+                <div className="pb-8 flex justify-center xl:justify-normal">
                   <Image alt="quotation mark" src={Quotation} width={60} />
                 </div>
                 <div className="text-text flex justify-between items-center">
                   <div>
-                    <p className="lg:text-2xl font-space text-justify max-w-xl font-light leading-8">
+                    <p className="xl:text-2xl text-sm font-space xl:text-justify xl:max-w-xl font-light leading-8">
                       {client.testimonial}
                     </p>
-                    <div className="pt-8 flex flex-col max-w-full">
+                    <div className="pt-8 flex flex-col max-w-full xl:justify-normal justify-center xl:text-start text-center">
                       <p className="text-sm">{client.name}</p>
-                      <div className="text-sm flex justify-between text-texts tfont-light py-2">
+                      <div className="text-sm  text-texts font-light py-2">
                         <p>{client.company}</p>
                       </div>
                     </div>
                   </div>
-                  <img src={client.image} className="rounded-full w-72 h-72" />
+                  <img src={client.image} className="rounded-full w-72 h-72 xl:block hidden" />
                 </div>
               </div>
             </SwiperSlide>
