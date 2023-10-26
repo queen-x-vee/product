@@ -8,6 +8,9 @@ import Feedback from "../../../../public/assets/services/feedback.svg"
 import StreamlinedProcess from '../../../../public/assets/services/streamlinedProcess.svg'
 import ContinousFeedback from '../../../../public/assets/services/continousFeedback.svg'
 import FlexibleHiringModels from '../../../../public/assets/services/flexibleHiringModels.svg'
+import ContrivedPlanning from '../../../../public/assets/services/contrivedPlanning.svg'
+import VendorPlanning from '../../../../public/assets/services/vendorPlanning.svg'
+import BudgetOptimization from '../../../../public/assets/services/budgetOptimization.svg'
 
 
 const Event = () => {
@@ -44,24 +47,24 @@ const Event = () => {
       <div>
       <div className="lg:pt-10 pt-5 grid grid-cols-1 lg:grid-cols-12 gap-4">
         <div className="lg:col-span-4">
-          <Card src={Talent} text="Tailored event planning to match the unique goals and theme of the tech event." title="Contrived Planning" />
+          <Card src={ContrivedPlanning} text="Tailored event planning to match the unique goals and theme of the tech event." title="Contrived Planning" />
         </div>
         <div className="lg:col-span-4">
-          <Card src={IndustryExpertise} text="Coordination of vendors, speakers, and logistics for a seamless & awesome event." title="Vendor Management" />
+          <Card src={VendorPlanning} text="Coordination of vendors, speakers, and logistics for a seamless & awesome event." title="Vendor Management" />
         </div>
         <div className="lg:col-span-4">
-          <Card src={Feedback} text="Access to experienced event managers with deep understanding of tech industries." title="Industry Expertise" />
+          <Card src={IndustryExpertise} text="Access to experienced event managers with deep understanding of tech industries." title="Industry Expertise" />
         </div>
       </div>
       <div className="lg:pt-10 pt-5 grid grid-cols-1 lg:grid-cols-12 gap-4">
         <div className="lg:col-span-4">
-          <Card src={FlexibleHiringModels} text=" Facilitation of meaningful connections and networking sessions for attendees." title="Networking Opportunities" />
+          <Card src={Feedback} text=" Facilitation of meaningful connections and networking sessions for attendees." title="Networking Opportunities" />
         </div>
         <div className="lg:col-span-4">
-          <Card src={ContinousFeedback} text="Strategies for cost-effective event management without compromising quality." title="Budget Optimization" />
+          <Card src={BudgetOptimization} text="Strategies for cost-effective event management without compromising quality." title="Budget Optimization" />
         </div>
         <div className="lg:col-span-4">
-          <Card src={StreamlinedProcess} text="Evaluation and feedback sessions for continuous improvement and future event planning." title="Post-Event Analysis" />
+          <Card src={ContinousFeedback} text="Evaluation and feedback sessions for continuous improvement and future event planning." title="Post-Event Analysis" />
         </div>
       </div>
       </div>

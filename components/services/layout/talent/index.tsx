@@ -9,6 +9,9 @@ import Feedback from "../../../../public/assets/services/feedback.svg"
 import StreamlinedProcess from '../../../../public/assets/services/streamlinedProcess.svg'
 import ContinousFeedback from '../../../../public/assets/services/continousFeedback.svg'
 import FlexibleHiringModels from '../../../../public/assets/services/flexibleHiringModels.svg'
+import SkillDevelopment from '../../../../public/assets/services/skillDevelopment.svg'
+import DiverseOpportunities from '../../../../public/assets/services/diverseOpportunities.svg'
+import JobMarketInsights from '../../../../public/assets/services/jobMarketInsights.svg'
 
 const Talent = () => {
   return (
@@ -44,24 +47,26 @@ const Talent = () => {
       <div>
       <div className="lg:pt-10 pt-5 grid grid-cols-1 lg:grid-cols-12 gap-4">
         <div className="lg:col-span-4">
-          <Card src={Talents} text="Ongoing training and upskilling opportunities to keep tech talent updated." title="Skill Development" />
+          <Card src={SkillDevelopment} text="Ongoing training and upskilling opportunities to keep tech talent updated." title="Skill Development" />
         </div>
         <div className="lg:col-span-4">
-          <Card src={IndustryExpertise} text="In-depth knowledge of the tech industry, enabling precise candidate matching." title="Industry Expertise" />
+          <Card src={DiverseOpportunities} text="Access to a wide range of job opportunities and projects in the tech industry." title="Diverse Opportunities" />
         </div>
         <div className="lg:col-span-4">
-          <Card src={Feedback} text="Tailored recruitment solutions to match the specific needs and culture of tech organizations." title="Customized Hiring" />
+          <Card src={JobMarketInsights} text="Access to information on job market trends and demand for specific tech skills." title="Job Market Insights" />
         </div>
       </div>
       <div className="lg:pt-10 pt-5 grid grid-cols-1 lg:grid-cols-12 gap-4">
+       
+       
         <div className="lg:col-span-4">
-          <Card src={FlexibleHiringModels} text=" Options for full-time, part-time, contract, or remote hiring to meet various needs." title="Flexible Hiring Models" />
+          <Card src={Talents} text="Incentives for referring other tech professionals to join the talent pool." title="Referral Programs" />
         </div>
         <div className="lg:col-span-4">
-          <Card src={ContinousFeedback} text="A feedback loop for continuous improvement and candidate-client alignment." title="Continous Feedback" />
+          <Card src={Feedback} text="Opportunities to engage with a supportive tech community and collaborate on projects." title="Community Engagement" />
         </div>
         <div className="lg:col-span-4">
-          <Card src={StreamlinedProcess} text="Efficient and time-saving recruitment processes to minimize hiring timelines." title="Streamlined Process" />
+          <Card src={IndustryExpertise} text=" Access to certification programs and industry-recognized credentials." title="Certification Opportunities" />
         </div>
       </div>
       </div>
