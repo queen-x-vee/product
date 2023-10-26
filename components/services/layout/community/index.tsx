@@ -1,6 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/micro/button";
+import Card from "@/components/micro/services/card";
+import IndustryExpertise from "../../../../public/assets/services/industryExpertise.svg"
+import NetworkingOpportunities from '../../../../public/assets/services/networkingOpportunities.svg'
+import Workshop from '../../../../public/assets/services/workshop.svg'
+import DiverseOpportunities from '../../../../public/assets/services/diverseOpportunities.svg'
+import JobOpportunities from '../../../../public/assets/services/jobOpportunities.svg'
+import Support from '../../../../public/assets/services/support.svg'
+
 
 const Community = () => {
   return (
@@ -37,6 +45,32 @@ const Community = () => {
             height={400}
           />
         </div>
+      </div>
+      <div>
+      <div className="lg:pt-10 pt-5 grid grid-cols-1 lg:grid-cols-12 gap-4">
+        <div className="lg:col-span-4">
+          <Card src={NetworkingOpportunities} text="Regular events and meetups to facilitate connections among tech enthusiasts." title="Networking Opportunities" />
+        </div>
+        <div className="lg:col-span-4">
+          <Card src={IndustryExpertise} text="In-depth knowledge of the tech industry, enabling precise candidate matching." title="Mentorship Programs" />
+        </div>
+        <div className="lg:col-span-4">
+          <Card src={Workshop} text="Regular educational events on emerging tech topics and skills." title="Workshop and Webinars" />
+        </div>
+      </div>
+      <div className="lg:pt-10 pt-5 grid grid-cols-1 lg:grid-cols-12 gap-4">
+       
+       
+        <div className="lg:col-span-4">
+          <Card src={JobOpportunities} text="Exclusive job postings and career development resources." title="Job Opportunities" />
+        </div>
+        <div className="lg:col-span-4">
+          <Card src={Support} text="A forum for sharing challenges and receiving constructive feedback and solutions from peers." title=" Supportive Community" />
+        </div>
+        <div className="lg:col-span-4">
+          <Card src={DiverseOpportunities} text=" Access to a repository of resources, articles, and tutorials shared by the community." title="Information Repository" />
+        </div>
+      </div>
       </div>
       <hr className="lg:mt-20 mt-14 opacity-10" />
     </section>
