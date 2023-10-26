@@ -1,14 +1,52 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { toast } from "react-toastify";
 import { useRouter } from "next/router";
-import Logo from "../../../public/assets/footer/Logo.svg";
-import formImage from "../../../public/assets/form/Account.svg";
 import { HiOutlineArrowLeft } from "react-icons/hi";
 import Copyright from "@/components/footer/copyright";
+import Supabase from "@/components/database/supabase";
+import Logo from "../../../public/assets/footer/Logo.svg";
+import formImage from "../../../public/assets/form/Account.svg";
 
 const Merchandise = () => {
   const router = useRouter();
+  const [loading, setLoading] = React.useState<boolean>(false);
+  const [isEmailValid, setIsEmailValid] = React.useState<boolean>(true);
+  const [form, setForm] = React.useState({
+    company_name: "",
+    country: "",
+    first_name: "",
+    last_name: "",
+    work_email: "",
+    phone_number: "",
+    merchandise: "",
+    quantity: "",
+    delivery_location: "",
+    delivery_date: "",
+    feedback: "",
+  });
+  const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.work_email);
+  const handleSubmit = async (e: any) => {
+    setIsEmailValid(isValidEmail);
+    e.preventDefault();
+    if (isValidEmail == true) {
+      setLoading(true);
+      const { data, error } = await Supabase.from("merch")
+        .insert([form])
+        .select();
+      if (error) {
+        console.log("An error occurred, please try again later");
+      } else {
+        toast.success("Your request has been successfully submitted. Thank you!");
+        setTimeout(() => {
+          router.push("/");
+        }, 1500);
+      }
+      setLoading(false);
+    }
+  };
+
   return (
     <>
       <section className="flex min-h-screen w-12/12 2xl:mx-auto 2xl:container">
@@ -65,13 +103,18 @@ const Merchandise = () => {
               </div>
             </Link>
             <h1 className="text-lg lg:text-2xl pb-8 pt-5 lg:w-full md:w-96 w-full ">
-            Quality Merchandise, Endless Possibilities            </h1>
+              Quality Merchandise, Endless Possibilities{" "}
+            </h1>
 
-            <form className="bg-form">
+            <form className="bg-form" onSubmit={handleSubmit}>
               <div className="grid xl:grid-cols-2 gap-x-5 ">
                 <input
                   type="text"
                   placeholder="Company Name"
+                  value={form.company_name}
+                  onChange={(e) =>
+                    setForm({ ...form, company_name: e.target.value })
+                  }
                   required
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
@@ -79,12 +122,20 @@ const Merchandise = () => {
                 <input
                   type="text"
                   placeholder="County"
+                  value={form.country}
+                  onChange={(e) =>
+                    setForm({ ...form, country: e.target.value })
+                  }
                   required
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12 "
                 />
                 <input
                   type="text"
                   placeholder="First Name"
+                  value={form.first_name}
+                  onChange={(e) =>
+                    setForm({ ...form, first_name: e.target.value })
+                  }
                   required
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
@@ -94,45 +145,76 @@ const Merchandise = () => {
                   required
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12 "
                 />
-                <input
-                  type="text"
-                  placeholder="Email Address"
-                  required
-                  className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
-                />
+                <div className="mb-6">
+                  <input
+                    type="email"
+                    value={form.work_email}
+                    onBlur={() => setIsEmailValid(isValidEmail)}
+                    onChange={(e) =>
+                      setForm({ ...form, work_email: e.target.value })
+                    }
+                    placeholder="Work Email"
+                    className="rounded-md px-2 py-2 mb-2 w-full h-12 lg:h-12"
+                  />
+                  {!isEmailValid && (
+                    <p className="text-red-500">Invalid email address</p>
+                  )}
+                </div>
                 <input
                   type="text"
                   placeholder="Phone Number"
+                  value={form.phone_number}
+                  onChange={(e) =>
+                    setForm({ ...form, phone_number: e.target.value })
+                  }
                   required
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
                 <input
                   type="text"
                   placeholder="Merchandise Needed"
+                  value={form.merchandise}
+                  onChange={(e) =>
+                    setForm({ ...form, merchandise: e.target.value })
+                  }
                   required
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
                 <input
                   type="text"
                   placeholder="Quantity"
+                  value={form.quantity}
+                  onChange={(e) =>
+                    setForm({ ...form, quantity: e.target.value })
+                  }
                   required
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12 "
                 />
                 <input
                   type="text"
-                  placeholder="Delivery Location "
+                  placeholder="Delivery Location"
+                  value={form.delivery_location}
+                  onChange={(e) =>
+                    setForm({ ...form, delivery_location: e.target.value })
+                  }
                   required
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12 "
                 />
                 <input
                   type="text"
                   placeholder="Delivery Date"
+                  value={form.delivery_date}
+                  onChange={(e) =>
+                    setForm({ ...form, delivery_date: e.target.value })
+                  }
                   required
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
               </div>
 
               <textarea
+                value={form.feedback}
+                onChange={(e) => setForm({ ...form, feedback: e.target.value })}
                 placeholder="Anything else you would like to share?"
                 required
                 className="rounded-md mb-8 px-2 py-2 h-28 w-full lg:h-40"

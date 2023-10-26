@@ -2,13 +2,54 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import Logo from "../../../public/assets/footer/Logo.svg";
-import formImage from "../../../public/assets/form/Account.svg";
+import { toast } from "react-toastify";
 import { HiOutlineArrowLeft } from "react-icons/hi";
 import Copyright from "@/components/footer/copyright";
+import Supabase from "@/components/database/supabase";
+import Logo from "../../../public/assets/footer/Logo.svg";
+import formImage from "../../../public/assets/form/Account.svg";
 
 const Recruit = () => {
   const router = useRouter();
+  const [loading, setLoading] = React.useState<boolean>(false);
+  const [isEmailValid, setIsEmailValid] = React.useState<boolean>(true);
+  const [form, setForm] = React.useState({
+    company_name: "",
+    country: "",
+    first_name: "",
+    last_name: "",
+    work_email: "",
+    website: "",
+    phone_number: "",
+    employee_range: "",
+    position: "",
+    mode_of_work: "",
+    employment_type: "",
+    commencement_date: "",
+    role: "",
+    skills: "",
+  });
+  const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.work_email);
+  const handleSubmit = async (e: any) => {
+    setIsEmailValid(isValidEmail);
+    e.preventDefault();
+    if (isValidEmail == true) {
+      setLoading(true);
+      const { data, error } = await Supabase.from("recruit")
+        .insert([form])
+        .select();
+      if (error) {
+        console.log("An error occurred, please try again later");
+      } else {
+        toast.success("Your request has been successfully submitted. Thank you!");
+        setTimeout(() => {
+          router.push("/");
+        }, 1500);
+      }
+      setLoading(false);
+    }
+  };
+
   return (
     <>
       <section className="flex min-h-screen w-12/12 2xl:mx-auto 2xl:container">
@@ -68,95 +109,135 @@ const Recruit = () => {
               Hire proactively, hire best.
             </h1>
 
-            <form className="bg-form">
+            <form className="bg-form" onSubmit={handleSubmit}>
               <div className="grid xl:grid-cols-2 gap-x-5 ">
                 <input
                   type="text"
-                  placeholder="Company Name *"
-                  required
+                  value={form.company_name}
+                  onChange={(e) =>
+                    setForm({ ...form, company_name: e.target.value })
+                  }
+                  placeholder="Company Name"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
                 <input
                   type="text"
-                  placeholder="Country *"
-                  required
+                  value={form.country}
+                  onChange={(e) =>
+                    setForm({ ...form, country: e.target.value })
+                  }
+                  placeholder="Country"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
                 <input
                   type="text"
-                  placeholder="First Name *"
-                  required
+                  value={form.first_name}
+                  onChange={(e) =>
+                    setForm({ ...form, first_name: e.target.value })
+                  }
+                  placeholder="First Name"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
                 <input
                   type="text"
-                  placeholder="Last Name *"
-                  required
+                  value={form.last_name}
+                  onChange={(e) =>
+                    setForm({ ...form, last_name: e.target.value })
+                  }
+                  placeholder="Last Name"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12 "
                 />
+                <div className="mb-6">
+                  <input
+                    type="email"
+                    value={form.work_email}
+                    onBlur={() => setIsEmailValid(isValidEmail)}
+                    onChange={(e) =>
+                      setForm({ ...form, work_email: e.target.value })
+                    }
+                    placeholder="Work Email"
+                    className="rounded-md px-2 py-2 mb-2 w-full h-12 lg:h-12"
+                  />
+                  {!isEmailValid && (
+                    <p className="text-red-500">Invalid email address</p>
+                  )}
+                </div>
                 <input
                   type="text"
-                  placeholder="Work Email *"
-                  required
-                  className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
-                />
-                <input
-                  type="text"
-                  placeholder="Company Website *"
-                  required
+                  value={form.website}
+                  onChange={(e) =>
+                    setForm({ ...form, website: e.target.value })
+                  }
+                  placeholder="Company Website"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12 "
                 />
                 <input
                   type="number"
-                  placeholder="Phone Number *"
-                  required
+                  value={form.phone_number}
+                  onChange={(e) =>
+                    setForm({ ...form, phone_number: e.target.value })
+                  }
+                  placeholder="Phone Number"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
 
                 <input
                   type="text"
-                  placeholder="Employee Range *"
-                  required
+                  value={form.employee_range}
+                  onChange={(e) =>
+                    setForm({ ...form, employee_range: e.target.value })
+                  }
+                  placeholder="Employee Range"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
 
                 <input
                   type="text"
-                  placeholder="Current Role *"
-                  required
+                  value={form.position}
+                  onChange={(e) =>
+                    setForm({ ...form, position: e.target.value })
+                  }
+                  placeholder="Current Role"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
                 <input
                   type="text"
-                  placeholder="Mode of work *"
-                  required
+                  value={form.mode_of_work}
+                  onChange={(e) =>
+                    setForm({ ...form, mode_of_work: e.target.value })
+                  }
+                  placeholder="Mode of work"
                   className=" rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
                 <input
                   type="text"
-                  placeholder="Employment Type *"
-                  required
+                  value={form.employment_type}
+                  onChange={(e) =>
+                    setForm({ ...form, employment_type: e.target.value })
+                  }
+                  placeholder="Employment Type"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
 
                 <input
                   type="text"
-                  placeholder="Commencement Date *"
-                  required
+                  value={form.commencement_date}
+                  onChange={(e) =>
+                    setForm({ ...form, commencement_date: e.target.value })
+                  }
+                  placeholder="Commencement Date"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
               </div>
               <input
                 type="text"
-                placeholder="Roles hiring for *"
-                required
+                value={form.skills}
+                onChange={(e) => setForm({ ...form, skills: e.target.value })}
+                placeholder="Skill Requirements"
                 className="w-full h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12"
               />
-              <select
-                required
-                className="w-full h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12"
-              >
-                <option>Skills Requirement</option>
+              <select className="w-full h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12">
+                <option value={form.company_name}>Roles hiring for</option>
                 <option>Front-End Developer</option>
                 <option>Digital Marketer</option>
                 <option>Product Manager</option>
@@ -174,7 +255,7 @@ const Recruit = () => {
               <div className="flex flex-col"></div>
 
               <div className="w-full mb-5  bg-[#DDDDDD] h-12 rounded-md flex justify-center">
-                <button>Submit</button>
+                <button disabled={loading == true}>Submit</button>
               </div>
             </form>
           </div>

@@ -31,7 +31,7 @@ const Testimonial = () => {
     {
       name: "Cynthia Udoh",
       company: " Content Creator at PennyTree",
-      image: "../../../assets/testimonial/destiny.svg",
+      image: "../../../assets/testimonial/2.svg",
       testimonial: `I currently intern as a content creator at PennyTree via
       Innovotio. As a content writer at PennyTree, the experience has
       been valuable in honing my skills and gaining practical
@@ -40,7 +40,7 @@ const Testimonial = () => {
     {
       name: "Precious Ogiemwonyi",
       company: "Graphic Designer at Ivendigital",
-      image: "../../../assets/testimonial/destiny.svg",
+      image: "../../../assets/testimonial/3.svg",
       testimonial: `Innovotio matched me with Startup Launchcode. I am already
       enjoying my role here as one of the graphic designers. The tasks
       keep pushing me to think outside the box and deep down, I know
@@ -64,7 +64,7 @@ const Testimonial = () => {
           centeredSlides={true}
           freeMode={true}
           autoplay={{
-            delay: 5000,
+            delay: 8000,
             disableOnInteraction: false,
           }}
           navigation={true}
@@ -89,7 +89,10 @@ const Testimonial = () => {
                       </div>
                     </div>
                   </div>
-                  <img src={client.image} className="rounded-full w-72 h-72 xl:block hidden" />
+                  <img
+                    src={client.image}
+                    className="rounded-full w-72 h-72 xl:block hidden"
+                  />
                 </div>
               </div>
             </SwiperSlide>
