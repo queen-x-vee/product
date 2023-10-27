@@ -4,7 +4,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="lg:pt-10 pt-5 text-text">
+    <header className="lg:pt-10 text-text">
       <h4 className="text-section font-medium">Our Services</h4>
       <h1 className="pt-1 font-semibold lg:text-5xl xl:text-6xl text-3xl max-w-lg lg:max-w-3xl">
         All things tech made affordable and accessible

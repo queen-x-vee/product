@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className="lg:pt-10 pt-5">
+    <header className="lg:pt-10">
       <h1 className="lg:text-5xl xl:text-6xl md:text-4xl text-3xl font-medium text-text">
         Who We Are
       </h1>

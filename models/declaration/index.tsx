@@ -53,7 +53,6 @@ export interface aboutCardProps {
   title: string;
 }
 export interface CardProps {
-  //icon: string | React.ReactNode;
   text: string;
   title: string;
   src: string;

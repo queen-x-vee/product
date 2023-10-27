@@ -1,24 +1,28 @@
 import FaqDropdown from "@/components/micro/about/faq";
 const Data = [
   {
-    question: "What is Innovotio about?",
-    answer: "nil",
+    question: "What's the exciting world of Innovotio all about?",
+    answer: `Innovotio is a tech organization that specializes in connecting tech talent across all levels of experience to organizations of all sizes to achieve their business goals. We offer up-to-date training programs for tech beginners or young tech talents looking to upskill and provide additional services to organizations in forms of business consultancy, tech events management & branded merchandise.`,
   },
   {
-    question: "What is Innovotio about?",
-    answer: "nil",
+    question: "Tell me about the courses offered at Innovotio?",
+    answer:
+      "At Innovotio, we offer a diverse range of training programs. You can explore courses in Development, Design, Product, Marketing, Management, Analysis, Security, and Testing. Our team of professionals is committed to equipping you with the skills needed to land your first job in the tech industry.",
   },
   {
-    question: "What is Innovotio about?",
-    answer: "nil",
+    question: "Can I create eye-catching branded merchandise with Innovotio?",
+    answer:
+      "Absolutely! Innovotio's team is here to assist you in designing and producing merchandise tailored to your tech events and branding requirements. Whether you're hosting conferences, workshops, or promotional campaigns, we can help you establish a unique identity..",
   },
   {
-    question: "What is Innovotio about?",
-    answer: "nil",
+    question: "Can Innovotio work its magic in managing my event?",
+    answer:
+      "You bet! At Innovotio, we ensure your event goes off without a hitch giving your guests an unforgettable experience.",
   },
   {
-    question: "What is Innovotio about?",
-    answer: "nil",
+    question: "Do you offer top-notch recruitment services?",
+    answer:
+      "Yes! Innovotio's dedicated human resource team is ready to take the hassle out of your recruitment process. We'll meticulously vet and provide the best-fit tech talents for your organization.",
   },
 ];
 

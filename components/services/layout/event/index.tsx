@@ -5,9 +5,9 @@ import Card from "@/components/micro/services/card";
 import IndustryExpertise from "../../../../public/assets/services/industryExpertise.svg";
 import Feedback from "../../../../public/assets/services/feedback.svg";
 import ContinousFeedback from "../../../../public/assets/services/continousFeedback.svg";
+import BudgetOptimization from "../../../../public/assets/services/budgetOptimization.svg";
 import ContrivedPlanning from "../../../../public/assets/services/contrivedPlanning.svg";
 import VendorPlanning from "../../../../public/assets/services/vendorPlanning.svg";
-import BudgetOptimization from "../../../../public/assets/services/budgetOptimization.svg";
 
 const Event = () => {
   return (

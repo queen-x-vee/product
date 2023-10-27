@@ -3,7 +3,7 @@ import Button from "@/components/micro/button";
 
 const Header = () => {
   return (
-    <header className="lg:pt-10 pt-5">
+    <header className="lg:pt-10 pt-0">
       <div className="space-y-5">
         <h1 className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl font-semibold max-w-md sm:max-w-[480px] lg:max-w-3xl xl:max-w-4xl text-text">
           Get qualified tech talents & event support

@@ -79,7 +79,7 @@ const Testimonial = () => {
                 </div>
                 <div className="text-text flex justify-between items-center">
                   <div>
-                    <p className="xl:text-2xl text-sm font-space xl:text-justify xl:max-w-xl font-light leading-8">
+                    <p className="xl:text-2xl text-sm md:text-base font-space xl:text-justify xl:max-w-xl font-light leading-7">
                       {client.testimonial}
                     </p>
                     <div className="pt-8 flex flex-col max-w-full xl:justify-normal justify-center xl:text-start text-center">

@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Button from "@/components/micro/button";
 import Card from "@/components/micro/services/card";
-import { CgNotes } from "react-icons/cg";
 import IndustryExpertise from "../../../../public/assets/services/industryExpertise.svg";
 import Talent from "../../../../public/assets/services/techTalent.svg";
 import Feedback from "../../../../public/assets/services/feedback.svg";
@@ -41,7 +40,6 @@ const Recruitment = () => {
           />
         </div>
       </div>
-      <div>
         <div className="lg:pt-10 pt-5 grid grid-cols-1 lg:grid-cols-3 gap-y-10 gap-x-5">
           <div>
             <Card
@@ -86,7 +84,6 @@ const Recruitment = () => {
             />
           </div>
         </div>
-      </div>
       <hr className="lg:mt-20 mt-14 opacity-10" />
     </section>
   );
