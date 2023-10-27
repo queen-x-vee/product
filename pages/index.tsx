@@ -16,7 +16,7 @@ const index = () => {
         <link rel="icon" href="/fav.png" />
         <meta
           property="og:url"
-          content="https://innovotio-website.vercel.app/"
+          content="https://development-innovotio.vercel.app/"
         />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Innovotio" />
@@ -28,14 +28,14 @@ const index = () => {
         />
         <meta
           property="og:image"
-          content="https://innovotio-website.vercel.app/inno.png"
+          content="https://development-innovotio.vercel.app/inno.png"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="innovotio.vercel.app" />
         <meta
           property="twitter:url"
-          content="https://innovotio-website.vercel.app/"
+          content="https://development-innovotio.vercel.app/"
         />
         <meta name="twitter:title" content="Innovotio" />
         <meta
@@ -46,7 +46,7 @@ const index = () => {
         />
         <meta
           name="twitter:image"
-          content="https://innovotio-website.vercel.app/inno.png"
+          content="https://development-innovotio.vercel.app/inno.png"
         />
       </Head>
       <Home />
