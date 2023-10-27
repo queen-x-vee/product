@@ -13,7 +13,7 @@ const Event = () => {
   return (
     <section className="lg:pt-20 pt-14 text-text">
       <div
-        className="flex lg:flex-row flex-col-reverse lg:space-x-5 justify-evenly lg:items-center"
+        className="flex lg:flex-row flex-col-reverse lg:space-x-5 justify-between lg:items-center"
         id="event"
       >
         <div>
