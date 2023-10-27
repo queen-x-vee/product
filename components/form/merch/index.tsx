@@ -154,6 +154,7 @@ const Merchandise = () => {
                       setForm({ ...form, work_email: e.target.value })
                     }
                     placeholder="Work Email"
+                    required
                     className="rounded-md px-2 py-2 mb-2 w-full h-12 lg:h-12"
                   />
                   {!isEmailValid && (

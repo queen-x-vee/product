@@ -17,7 +17,7 @@ const Services = () => {
       <Consultancy/>
       <Talent/>
       <Community/>
-      <Banner />
+      {/* <Banner /> */}
     </div>
   );
 };

@@ -158,6 +158,7 @@ const Event = () => {
                     onChange={(e) =>
                       setForm({ ...form, work_email: e.target.value })
                     }
+                    required
                     placeholder="Work Email"
                     className="rounded-md px-2 py-2 mb-2 w-full h-12 lg:h-12"
                   />

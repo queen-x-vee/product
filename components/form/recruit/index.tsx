@@ -41,7 +41,9 @@ const Recruit = () => {
       if (error) {
         console.log("An error occurred, please try again later");
       } else {
-        toast.success("Your request has been successfully submitted. Thank you!");
+        toast.success(
+          "Your request has been successfully submitted. Thank you!"
+        );
         setTimeout(() => {
           router.push("/");
         }, 1500);
@@ -117,6 +119,7 @@ const Recruit = () => {
                   onChange={(e) =>
                     setForm({ ...form, company_name: e.target.value })
                   }
+                  required
                   placeholder="Company Name"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
@@ -126,6 +129,7 @@ const Recruit = () => {
                   onChange={(e) =>
                     setForm({ ...form, country: e.target.value })
                   }
+                  required
                   placeholder="Country"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
@@ -135,6 +139,7 @@ const Recruit = () => {
                   onChange={(e) =>
                     setForm({ ...form, first_name: e.target.value })
                   }
+                  required
                   placeholder="First Name"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
@@ -144,6 +149,7 @@ const Recruit = () => {
                   onChange={(e) =>
                     setForm({ ...form, last_name: e.target.value })
                   }
+                  required
                   placeholder="Last Name"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12 "
                 />
@@ -155,6 +161,7 @@ const Recruit = () => {
                     onChange={(e) =>
                       setForm({ ...form, work_email: e.target.value })
                     }
+                    required
                     placeholder="Work Email"
                     className="rounded-md px-2 py-2 mb-2 w-full h-12 lg:h-12"
                   />
@@ -168,6 +175,7 @@ const Recruit = () => {
                   onChange={(e) =>
                     setForm({ ...form, website: e.target.value })
                   }
+                  required
                   placeholder="Company Website"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12 "
                 />
@@ -177,6 +185,7 @@ const Recruit = () => {
                   onChange={(e) =>
                     setForm({ ...form, phone_number: e.target.value })
                   }
+                  required
                   placeholder="Phone Number"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
@@ -187,6 +196,7 @@ const Recruit = () => {
                   onChange={(e) =>
                     setForm({ ...form, employee_range: e.target.value })
                   }
+                  required
                   placeholder="Employee Range"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
@@ -197,6 +207,7 @@ const Recruit = () => {
                   onChange={(e) =>
                     setForm({ ...form, position: e.target.value })
                   }
+                  required
                   placeholder="Current Role"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
@@ -206,6 +217,7 @@ const Recruit = () => {
                   onChange={(e) =>
                     setForm({ ...form, mode_of_work: e.target.value })
                   }
+                  required
                   placeholder="Mode of work"
                   className=" rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
@@ -215,6 +227,7 @@ const Recruit = () => {
                   onChange={(e) =>
                     setForm({ ...form, employment_type: e.target.value })
                   }
+                  required
                   placeholder="Employment Type"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
@@ -225,6 +238,7 @@ const Recruit = () => {
                   onChange={(e) =>
                     setForm({ ...form, commencement_date: e.target.value })
                   }
+                  required
                   placeholder="Commencement Date"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
@@ -232,12 +246,18 @@ const Recruit = () => {
               <input
                 type="text"
                 value={form.skills}
+                required
                 onChange={(e) => setForm({ ...form, skills: e.target.value })}
                 placeholder="Skill Requirements"
                 className="w-full h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12"
               />
-              <select className="w-full h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12">
-                <option value={form.company_name}>Roles hiring for</option>
+              <select
+                value={form.role}
+                required
+                onChange={(e) => setForm({ ...form, role: e.target.value })}
+                className="w-full h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12"
+              >
+                <option>Roles hiring for</option>
                 <option>Front-End Developer</option>
                 <option>Digital Marketer</option>
                 <option>Product Manager</option>
