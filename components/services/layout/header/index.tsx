@@ -1,5 +1,4 @@
 import Button from "@/components/micro/button";
-import Link from "next/link";
 import React from "react";
 
 const Header = () => {
@@ -16,12 +15,7 @@ const Header = () => {
       </p>
 
       <div className="pt-5 space-y-5 md:space-y-0 md:space-x-10 flex flex-col md:flex-row">
-       
-        <Link href="/business" legacyBehavior>
-          <a target="_blank">
-            <Button>Explore Our Services</Button>
-          </a>
-        </Link>
+        <Button>Explore Our Services</Button>
       </div>
       <hr className="lg:mt-20 mt-14 opacity-10" />
     </header>

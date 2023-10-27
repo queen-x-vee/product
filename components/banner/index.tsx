@@ -15,12 +15,12 @@ const Banner = () => {
           </p>
         </div>
         <div className="flex flex-row space-x-10 lg:pt-0 pt-6">
-          <Link href="/business" legacyBehavior>
+          <Link href="/services/merch" legacyBehavior>
             <a target="_blank">
               <Button>Order Merch</Button>
             </a>
           </Link>
-          <Link href="/business" legacyBehavior>
+          <Link href="/services/event" legacyBehavior>
             <a target="_blank">
               <Button className="bg-text text-black">Get Event Support</Button>
             </a>
