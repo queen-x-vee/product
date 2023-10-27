@@ -41,9 +41,7 @@ const Recruit = () => {
       if (error) {
         console.log("An error occurred, please try again later");
       } else {
-        toast.success(
-          "Your request has been successfully submitted!"
-        );
+        toast.success("Your request has been successfully submitted!");
         setTimeout(() => {
           router.push("/");
         }, 1500);
@@ -211,16 +209,18 @@ const Recruit = () => {
                   placeholder="Current Role"
                   className="rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
                 />
-                <input
-                  type="text"
+                <select
                   value={form.mode_of_work}
-                  onChange={(e) =>
-                    setForm({ ...form, mode_of_work: e.target.value })
-                  }
                   required
-                  placeholder="Mode of work"
-                  className=" rounded-md mb-8 px-2 py-2 h-12 lg:h-12"
-                />
+                  onChange={(e) => setForm({ ...form, mode_of_work: e.target.value })}
+                  className="w-full h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12"
+                >
+                  <option>Mode of work</option>
+                  <option>Onsite</option>
+                  <option>Hybrid</option>
+                  <option>Remote</option>
+                </select>
+               
                 <input
                   type="text"
                   value={form.employment_type}

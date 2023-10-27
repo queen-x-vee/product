@@ -46,15 +46,6 @@ const Testimonial = () => {
       keep pushing me to think outside the box and deep down, I know
       have been perfectly matched thanks to Innovotio.`,
     },
-    {
-      name: "Cynthia Udoh",
-      company: " Content Creator at PennyTree",
-      image: "../../../assets/testimonial/destiny.svg",
-      testimonial: `I currently intern as a content creator at PennyTree via
-      Innovotio. As a content writer at PennyTree, the experience has
-      been valuable in honing my skills and gaining practical
-      knowledge in content creation.`,
-    },
   ];
   return (
     <section className="pt-14 lg:pt-20">
