@@ -39,7 +39,7 @@ const Talent = () => {
       if (error) {
         toast.error("An error occurred, please try again later");
       } else {
-        toast.success("Your request has been successfully submitted. Thank you!");
+        toast.success("Your request has been successfully submitted!");
         setTimeout(() => {
           router.push("/");
         }, 1500);

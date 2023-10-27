@@ -38,7 +38,7 @@ const Merchandise = () => {
       if (error) {
         console.log("An error occurred, please try again later");
       } else {
-        toast.success("Your request has been successfully submitted. Thank you!");
+        toast.success("Your request has been successfully submitted!");
         setTimeout(() => {
           router.push("/");
         }, 1500);
@@ -217,7 +217,6 @@ const Merchandise = () => {
                 value={form.feedback}
                 onChange={(e) => setForm({ ...form, feedback: e.target.value })}
                 placeholder="Anything else you would like to share?"
-                required
                 className="rounded-md mb-8 px-2 py-2 h-28 w-full lg:h-40"
               />
               <div className="w-full mb-5  bg-[#DDDDDD] h-12 rounded-md flex justify-center">

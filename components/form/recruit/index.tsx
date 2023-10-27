@@ -42,7 +42,7 @@ const Recruit = () => {
         console.log("An error occurred, please try again later");
       } else {
         toast.success(
-          "Your request has been successfully submitted. Thank you!"
+          "Your request has been successfully submitted!"
         );
         setTimeout(() => {
           router.push("/");
