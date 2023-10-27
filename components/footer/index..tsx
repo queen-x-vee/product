@@ -24,13 +24,11 @@ function Footer() {
             />
           </figure>
           <div className="">
-            <Link href="/business" legacyBehavior>
-              <a target="_blank">
+              <a target="_blank" href="mailto:talents@innovotio.com">
                 <Button className="my-5 bg-text text-black">
                   Get In Touch
                 </Button>
               </a>
-            </Link>
           </div>
 
           <figure className="flex justify-between items-center w-52 md:w-64 mt-10">
