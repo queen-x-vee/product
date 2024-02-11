@@ -27,6 +27,8 @@ const Header = () => {
           </p>
         </div>
       </div>
+     
+      </div>
       <div className="lg:pt-20 pt-14 flex justify-center items-center">
         <img
           src="../../../clients.svg"
@@ -38,7 +40,6 @@ const Header = () => {
           alt="brands"
           className="w-96 h-36 sm:hidden block"
         />
-      </div>
       </div>
      
     
